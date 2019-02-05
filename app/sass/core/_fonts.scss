@@ -1,0 +1,100 @@
+
+    /*    FONT FAMILIES    */
+    
+    $Roboto: 'Roboto', sans-serif;
+    
+   
+    /*    FONT SIZES    */
+
+    $fontMini:      0.8em;
+    $fontTiny:      0.9em;
+    $fontText:      0.93em;
+    $fontSmall:     1em;
+    $fontRegular:   1.2em;
+    $fontMedium:    1.4em;
+    $fontLarge:     1.6em;
+    $fontHuge:      1.8em;
+    $fontDouble:    2em;
+    $fontTriple:    3em;
+
+
+    /*    FONT WEIGHTS 
+
+        - Based on 'Roboto'
+
+    */
+    
+    $weightRegular: 400;
+    $weightMedium: 500;
+    $weightBold: 700;
+    $weightBlack: 900;
+
+
+::selection {
+    color: $white;
+    background-color: $black;
+}
+
+a {
+    font-family: $Roboto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--black);
+    font-family: $Roboto;
+}
+
+h1 {
+    font-size: var(--fontHuge);
+    font-weight: var(--weightBold);
+}
+
+h2 {
+    font-size: var(--fontLarge);
+    font-weight: var(--weightBold);
+}
+
+h3 {
+    font-size: var(--fontMedium);
+    font-weight: var(--weightBold);
+}
+
+h4 {
+    font-size: var(--fontRegular);
+    font-weight: var(--weightMedium);
+}
+
+h5 {
+    font-size: var(--fontText);
+    font-weight: var(--weightMedium);
+}
+
+h6 {
+    font-size: var(--fontMedium);
+    font-weight: var(--weightRegular);
+}
+
+p {
+    font-size: var(--fontText);
+    line-height: 24px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.font-mini {
+    font-size: $fontMini;
+}
+
+.font-tiny {
+    font-size: $fontTiny;
+}
+
+.font-text {
+    font-size: $fontText;
+}

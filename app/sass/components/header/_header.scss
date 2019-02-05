@@ -1,0 +1,24 @@
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #e9e9e9;
+
+    nav {
+        font-weight: $weightMedium;
+        justify-content: flex-end;        
+        a { 
+            color: $darkBlue;
+            padding: 0 $paddingMedium;
+            transition: color 300ms ease-in-out;
+            &:hover { color: $aqua; }
+        }        
+    }
+
+    .social a {
+        color: $darkAqua;
+        padding: 0 $paddingNormal;
+        transition: color 300ms ease-in-out;
+        &:hover { color: $aqua; }
+    }
+
+}
