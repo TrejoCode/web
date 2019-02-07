@@ -1,0 +1,40 @@
+
+.home {
+
+    .banner {
+        min-height: 85vh;
+    }
+
+    .banner .left {
+        width: 50%;
+        justify-content: center;
+        .btn {
+            width: 430px;
+        }
+    }
+
+    .banner .right {
+        width: 50%;
+        img {
+            max-width: 400px;
+        }
+    }
+
+    .services {
+        background-color: $lightAqua;
+        min-height: 600px;
+    }
+
+    .services .left {
+        width: 40%;
+        p {
+            padding: 0 $paddingNormal;
+            b { color: $darkAqua; }
+        }
+    }
+
+    .services .right {
+        width: 60%;
+    }
+
+}

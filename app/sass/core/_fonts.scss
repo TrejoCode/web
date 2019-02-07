@@ -40,43 +40,44 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color: var(--black);
+    color: $black;
     font-family: $Roboto;
 }
 
 h1 {
-    font-size: var(--fontHuge);
-    font-weight: var(--weightBold);
+    font-size: $fontHuge;
+    font-weight: $weightBold;
 }
 
 h2 {
-    font-size: var(--fontLarge);
-    font-weight: var(--weightBold);
+    font-size: $fontLarge;
+    font-weight: $weightBold;
 }
 
 h3 {
-    font-size: var(--fontMedium);
-    font-weight: var(--weightBold);
+    font-size: $fontMedium;
+    font-weight: $weightBold;
 }
 
 h4 {
-    font-size: var(--fontRegular);
-    font-weight: var(--weightMedium);
+    font-size: $fontRegular;
+    font-weight: $weightMedium;
 }
 
 h5 {
-    font-size: var(--fontText);
-    font-weight: var(--weightMedium);
+    font-size: $fontText;
+    font-weight: $weightMedium;
 }
 
 h6 {
-    font-size: var(--fontMedium);
-    font-weight: var(--weightRegular);
+    font-size: $fontMedium;
+    font-weight: $weightRegular;
 }
 
 p {
-    font-size: var(--fontText);
+    font-size: $fontText;
     line-height: 24px;
+    color: $gray;
 }
 
 .uppercase {
@@ -85,6 +86,14 @@ p {
 
 .underline {
     text-decoration: underline;
+}
+
+.weight-medium {
+    font-weight: $weightMedium;
+}
+
+.weight-bold {
+    font-weight: $weightBold;
 }
 
 .font-mini {

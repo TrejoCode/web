@@ -2,7 +2,35 @@
 
 $black:     #000000;
 $white:     #FFFFFF;
+$lightBlue: #516376;  
+$gray:      #6c6c6c;  
 
 $darkBlue:  #263d54;
 $darkAqua:  #258395;
 $aqua:      #33c8a3;
+$lightAqua: #ebf3f5;
+
+
+.color-black {
+    color: $black;
+}
+
+.color-white {
+    color: $white;
+}
+
+.color-lightBlue {
+    color: $lightBlue;
+}
+
+.color-darkBlue {
+    color: $darkBlue;
+}
+
+.color-aqua {
+    color: $aqua;
+}
+
+.color-darkAqua {
+    color: $darkAqua;
+}
