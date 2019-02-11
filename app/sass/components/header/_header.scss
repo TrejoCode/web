@@ -5,7 +5,7 @@ header {
 
     nav {
         font-weight: $weightMedium;
-        justify-content: flex-end;        
+        justify-content: flex-end;
         a { 
             color: $darkBlue;
             padding: 0 $paddingMedium;
@@ -21,4 +21,31 @@ header {
         &:hover { color: $aqua; }
     }
 
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        .left {
+            width: 20%;
+        }
+
+        .right  {
+            width: 80%;
+        }
+
+        nav {
+            a { 
+                font-size: $fontText;
+                padding: 0 $paddingNormal;                
+            }        
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        .left { width: 100%; }
+        .right { display: none; }
+    }
 }
