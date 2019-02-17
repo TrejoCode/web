@@ -16,7 +16,7 @@
     .banner .right {
         width: 50%;
         img {
-            max-width: 350px;
+            max-width: 400px;
         }
     }
 
@@ -80,6 +80,30 @@
         .footer-content {
             padding: $paddingNormal 0;
         }
+    }  
+    
+    .about {
+        background-color: $white;
+    }
+
+    .about .left {
+        width: 40%;
+    }
+
+    .about .left .me-picture {
+        margin-bottom: $paddingLarge;
+    }
+
+    .about .left img {
+        height: 400px;
+        padding-right: $paddingNormal;
+    }
+
+    .about .right {
+        width: 60%;
+        p {
+            padding: 0 $paddingNormal;
+        }
     }
 
 }
@@ -114,6 +138,16 @@
                 width: 100%;
                 margin-bottom: $paddingLarge;
             }
+        }        
+
+        .about .right {
+            p { padding: 0; }   
+        }
+
+        .about .left img {
+            width: 85%;
+            height: auto;
+            padding-right: 0;
         }
 
     }    
@@ -154,6 +188,25 @@
             .card-head img { width: 100%; }
 
         }
+
+        .about .left {
+            width: 100%;
+            .me-picture{
+                margin-bottom: 0;
+                .responsive-img { justify-content: center; align-items: center; }
+            } 
+        }
+
+        .about .right {
+            width: 100%;
+            p { padding: 0; }   
+        }
+
+        .about .left img {
+            width: 100%;
+            height: auto;
+        }
+
     }    
 }
 
