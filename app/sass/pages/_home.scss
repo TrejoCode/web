@@ -244,6 +244,31 @@
             height: auto;
         }
 
+        .portfolio .project-container {
+            justify-content: space-between;
+        }
+
+        .portfolio .project {
+            width: 100%;
+            &:first-of-type { padding-left: 0; }
+            &:last-of-type { padding-right: 0; }
+        }
+
+        .portfolio .image {
+            width: 100%;
+            height: auto;
+            img { width: 100%; height: auto; }
+        }        
+        
+        .portfolio .title {
+            min-width: 50%;            
+        }
+
+        .portfolio .description {
+            justify-content: flex-end;
+            h5 { text-align: right; }
+        }
+
     }    
 }
 
