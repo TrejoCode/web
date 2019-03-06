@@ -1,7 +1,13 @@
 
 .btn {
+    cursor: pointer;
     min-height: 32px;
     font-size: $fontRegular;
+    transition: 400ms background-color ease-in-out;
+}
+
+.btn:hover {
+    background-color: $darkAqua;
 }
 
 .btn-radius {

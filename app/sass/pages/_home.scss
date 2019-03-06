@@ -143,6 +143,22 @@
         h5 { text-align: right; }
     }
 
+    .contact form {
+        width: 60%;
+    }
+
+    form input {
+        min-width: 48%;
+    }
+
+    form a {
+        color: $gray;
+    }
+
+    form .btn {
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -269,7 +285,24 @@
             h5 { text-align: right; }
         }
 
-    }    
+        .contact form {
+            width: 100%;
+        }
+
+        form input {
+            min-width: 45%;
+            margin: 0 4px;
+        }
+
+        form a {
+            text-align: center;
+        }
+
+        form .btn {
+            width: 80%;
+        }
+
+    }
 }
 
 @media screen and (max-width: 576px) {

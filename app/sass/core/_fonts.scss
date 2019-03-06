@@ -107,3 +107,8 @@ p {
 .font-text {
     font-size: $fontText;
 }
+
+::selection {
+    background-color: $aqua;
+    color: $white;
+}
