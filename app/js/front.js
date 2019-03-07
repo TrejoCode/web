@@ -1,3 +1,11 @@
+/**
+ * Name: Front.js
+ * Description: Interactividad del sitio, carga del serviceWorker.
+*/
+
+
+// Carga la fuenta de Google de manera asíncrona
+
 WebFontConfig = {
     google: { families: [ 'Roboto:400,500,700' ] }
   };
@@ -9,13 +17,19 @@ WebFontConfig = {
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
-  })();
+})();
+
+
+// Inicializar el service worker
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./serviceWorker.js')
-    .then(reg => console.log('Registro de SW exitoso', reg))
-    .catch(err => console.warn('Error al tratar de registrar el sw', err))
+    .then(reg => console.log('Service Worker Instalado', reg))
+    .catch(err => console.warn('Error al tratar de registrar el Service Worker', err))
 }
+
+
+// Interactividad de las imágenes
 
 function servicesFunctions() {
 
@@ -32,9 +46,7 @@ function servicesFunctions() {
             staticOnLeave(services[index], servicesImage[index]);
         });
     }
-
-
-
+    
     function animateOnHover(element, image) {
         element.querySelectorAll('.holder-image')[0].setAttribute('src', image);
     }

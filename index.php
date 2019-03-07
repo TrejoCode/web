@@ -476,7 +476,7 @@
                         </p>                            
                         <div class="white-space-32"></div>
                         <div class="justify-center align-center">
-                            <form method="POST" class="column">
+                            <form method="POST" action="./app/php/email.php" class="column">
                                 <div class="row justify-between">
                                     <input type="text" name="name" maxlength="60" class="input input-radius" placeholder="Nombre" required />
                                     <input type="email" name="email" maxlength="100" class="input input-radius" placeholder="Correo electrónico" required />
@@ -493,7 +493,7 @@
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="btn-container justify-center">
-                                    <button class="btn btn-large btn-aqua btn-radius color-white weight-bold">
+                                    <button type="submit" class="btn btn-large btn-aqua btn-radius color-white weight-bold">
                                         ENVIAR
                                     </button>
                                 </div>
