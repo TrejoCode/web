@@ -46,6 +46,6 @@ header {
 @media screen and (max-width: 768px) {
     header {
         .left { width: 100%; }
-        .right { display: none; }
+        .right nav { display: none; }
     }
 }

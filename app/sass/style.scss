@@ -1,5 +1,5 @@
 
-$dev: true;
+$dev: false;
 
 @import './core/dev';
 @import './core/trejocode';
@@ -11,6 +11,8 @@ $dev: true;
 @import './components/header/header';
 @import './components/inputs/inputs';
 @import './components/footer/footer';
+
+@import './libs/animate';
 
 @import './pages/home';
 
