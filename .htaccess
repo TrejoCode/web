@@ -16,7 +16,7 @@ ExpiresDefault A2592000
 ExpiresDefault A2592000
 </FilesMatch>
  
-<FilesMatch "\.(css)$">
+<FilesMatch "\.(css|js)$">
 ExpiresDefault A2592000
 </FilesMatch>
  
@@ -34,7 +34,7 @@ ExpiresDefault A2592000
    Header set Cache-Control "max-age=2592000"
   </FilesMatch>
  
-  <FilesMatch "\.(css)$">
+  <FilesMatch "\.(css||js)$">
    Header set Cache-Control "max-age=2592000"
   </FilesMatch>
  
@@ -65,3 +65,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
+
+## Redireccionar siempre a https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

@@ -3,9 +3,9 @@ const CACHE_NAME = 'trejocode',
   urlsToCache = [
     './',    
     'https://use.fontawesome.com/releases/v5.7.1/css/all.css',
-    'https://www.trejocode.com/new/app/css/style.min.css',
-    'https://www.trejocode.com/new/app/js/front.js',    
-    'https://www.trejocode.com/new/favicon.ico'
+    'https://www.trejocode.com/app/css/style.min.css',
+    'https://www.trejocode.com/app/js/front.js',    
+    'https://www.trejocode.com/favicon.ico'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos

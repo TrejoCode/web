@@ -19,7 +19,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.trejocode.com/" />
     <meta property="og:title" content="Trejocode - Diseño y Desarrollo Web en Cancún" />
-    <meta property="og:image" content="https://www.trejocode.com/new/og.jpg" />
+    <meta property="og:image" content="https://www.trejocode.com/og.jpg" />
+    <meta property="og:description" content="Diseño y desarrollo Web, Progressive Web Apps en Cancún || Sergio Alejandro Trejo | trejocode" />
     <!-- IOS Meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="./app/img/icons/icon-96.png /">
@@ -29,7 +30,7 @@
 <body>
     <!-- Cargar Facebook SDK  -->
     <div id="fb-root"></div>
-    <script>
+    <script defer>
         window.fbAsyncInit = function() {
             FB.init({
                 xfbml: true,
@@ -477,7 +478,7 @@
                         </div>
                         <div class="white-space-32"></div>
                         <div class="btn-container justify-center">
-                            <a href="#" class="btn btn-large btn-aqua btn-radius color-white weight-bold text-center" id="view-all">
+                            <a href="/" class="btn btn-large btn-aqua btn-radius color-white weight-bold text-center" id="view-all">
                                 VER TODOS LOS PROYECTOS
                             </a>
                         </div>
@@ -510,7 +511,7 @@
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="justify-center">
-                                    <a href="#">
+                                    <a href="/privacidad">
                                         Al enviar aceptas la política de privacidad del sitio Web, puedes consultarlo con un click.
                                     </a>
                                 </div>
@@ -559,6 +560,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116751036-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }

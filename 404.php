@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index" />
@@ -19,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.trejocode.com/" />
     <meta property="og:title" content="Trejocode - Diseño y Desarrollo Web en Cancún" />
-    <meta property="og:image" content="https://www.trejocode.com/new/og.jpg" />
+    <meta property="og:image" content="https://www.trejocode.com/og.jpg" />
     <!-- IOS Meta -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="./app/img/icons/icon-96.png /">
