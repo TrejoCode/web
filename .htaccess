@@ -49,10 +49,7 @@ ExpiresDefault A2592000
 
 # Redireccionamiento 301 a WWW
 
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTP_HOST} ^trejocode.com [NC]
-    RewriteRule (.*) https://www.trejocode.com/$1 [R=301,L,QSA]
-</IfModule>
+
 
 # Página de error 404
 
@@ -66,7 +63,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
 
-## Redireccionar siempre a https
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

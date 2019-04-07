@@ -478,7 +478,7 @@
                         </div>
                         <div class="white-space-32"></div>
                         <div class="btn-container justify-center">
-                            <a href="/" class="btn btn-large btn-aqua btn-radius color-white weight-bold text-center" id="view-all">
+                            <a href="/portafolio" class="btn btn-large btn-aqua btn-radius color-white weight-bold text-center" id="view-all">
                                 VER TODOS LOS PROYECTOS
                             </a>
                         </div>

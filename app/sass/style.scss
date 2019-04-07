@@ -15,5 +15,6 @@ $dev: false;
 @import './libs/animate';
 
 @import './pages/home';
+@import './pages/portafolio';
 
 @if ($dev) {  @include dev; }
