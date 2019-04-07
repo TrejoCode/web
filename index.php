@@ -502,12 +502,12 @@
                         <div class="justify-center align-center">
                             <form method="POST" action="./app/php/email.php" class="column">
                                 <div class="row justify-between">
-                                    <input type="text" name="name" maxlength="60" class="input input-radius" placeholder="Nombre" required />
-                                    <input type="email" name="email" maxlength="100" class="input input-radius" placeholder="Correo electrónico" required />
+                                    <input type="text" name="name" minlength="6" maxlength="60" class="input input-radius" placeholder="Nombre" required />
+                                    <input type="email" name="email" minlength="8" maxlength="100" class="input input-radius" placeholder="Correo electrónico" required />
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="row">
-                                    <textarea name="message" rows="10" maxlength="600" class="input input-radius textarea" placeholder="Redacta tu mensaje, proyecto o seamos amigos :)" required></textarea>
+                                    <textarea name="message" rows="10" minlength="25" maxlength="600" class="input input-radius textarea" placeholder="Redacta tu mensaje, proyecto o seamos amigos :)" required></textarea>
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="justify-center">

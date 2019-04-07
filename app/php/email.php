@@ -11,7 +11,7 @@
     if(isset($_POST['email'])) { $email = $_POST['email']; }
 
     if(isset($_POST['message'])) {
-        $message = "Nombre: " . $name . "<br/>" . "Correo: " . $email . "<br/>" . "Mensaje: " . $_POST['message'];
+        $message = "Nombre: " . $name . "\n" . "Correo: " . $email . "\n" . "Mensaje: " . $_POST['message'];
     }
 
     mail($to, $subject, $message);
