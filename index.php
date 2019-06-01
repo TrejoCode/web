@@ -53,6 +53,15 @@
 
     <div class="main flex">
         <div class="column">
+            <div class="popover-top justify-center">
+                <div class="container justify-center align-center">
+                    <div class="align-center auto">
+                        <a href="/b4a" class="color-white font-text">
+                            ¡Aprende a desarrollar aplicaciones Android!, Accede al curso 🔥
+                        </a>
+                    </div>
+                </div>
+            </div>
             <header class="justify-center">
                 <div class="container">
                     <div class="left align-center auto">
@@ -570,4 +579,4 @@
 
 </body>
 
-</html> 
+</html>
