@@ -235,6 +235,31 @@
                             </div>
                             <div class="white-space-24"></div>
                         </div>
+                        <div class="project column green-card wow fadeInLeft" data-wow-delay="0.2s" id="upqroo">
+                            <div class="image responsive-img justify-center align-center">
+                                <img src="./app/img/delaluz.png" alt="Universidad Politécnica de Quintana Roo" title="Universidad Politécnica de Quintana Roo" />
+                            </div>
+                            <div class="white-space-16"></div>
+                            <div class="information align-center">
+                                <div class="title column">
+                                    <h2 class="color-darkAqua">
+                                        Tecnologías de la Luz
+                                    </h2>
+                                    <a class="color-gray font-tiny" href="https://www.tecnologiasdelaluz.com.mx/" target="_blank" rel="nofollow">
+                                        www.tecnologiasdelaluz.com.mx
+                                    </a>
+                                </div>
+                                <div class="description column">
+                                    <h5 class="color-gray">
+                                        Diseño Web
+                                    </h5>
+                                    <h5 class="color-gray">
+                                        Desarrollo Web
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="white-space-24"></div>
+                        </div>
                     </div>
                     <div class="white-space-64"></div>
                     <h2 class="color-darkAqua">
