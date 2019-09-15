@@ -370,6 +370,59 @@
                             <div class="white-space-24"></div>
                         </div>
                     </div>
+                    <div class="project-container row-responsive">
+                        <div class="project column green-card wow fadeInLeft" data-wow-delay="0.2s" id="elfos">
+                            <div class="image responsive-img justify-center align-center">
+                                <img src="./app/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
+                            </div>
+                            <div class="white-space-16"></div>
+                            <div class="information align-center">
+                                <div class="title column">
+                                    <h2 class="color-darkAqua">
+                                        Best Line Cancún
+                                    </h2>
+                                    <a class="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="nofollow">
+                                        www.bestlinecancun.com
+                                    </a>
+                                </div>
+                                <div class="description column">
+                                    <h5 class="color-gray">
+                                        Desarrollo Web
+                                    </h5>
+                                    <h5 class="color-gray">
+                                        Web administrable
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="white-space-24"></div>
+                        </div>
+                        <div class="project column blue-card wow fadeInLeft" data-wow-delay="0.1s" id="pardi">
+                            <div class="image responsive-img justify-center align-center">
+                                <img src="./app/img/goworkers.png" alt="Go Workers" title="Go Workers" />
+                            </div>
+                            <div class="white-space-16"></div>
+                            <div class="information align-center">
+                                <div class="title column">
+                                    <h2 class="color-darkAqua">
+                                        Go Workers
+                                    </h2>
+                                    <a class="color-gray font-tiny" href="https://www.goworkers.es/" target="_blank" rel="nofollow">
+                                        www.goworkers.es
+                                    </a>
+                                </div>
+                                <div class="description column">
+                                    <h5 class="color-gray">
+                                        Desarrollo Web
+                                    </h5>
+                                    <h5 class="color-gray">
+                                        Web API
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="white-space-24"></div>
+                        </div>                        
+                    </div>
+
                     <div class="white-space-64"></div>
                     <h2 class="color-darkAqua">
                         <span class="color-aqua weight-bold">{</span> ANDROID
@@ -387,15 +440,15 @@
                                         Inspecciones Colombia
                                     </h2>
                                     <a class="color-gray font-tiny" href="#" target="_blank" rel="nofollow">
-                                        sin sitio
+                                        Sin Web
                                     </a>
                                 </div>
                                 <div class="description column">
                                     <h5 class="color-gray">
-                                        App Android
+                                        App Android, IOS
                                     </h5>
                                     <h5 class="color-gray">
-                                        API
+                                        Web API
                                     </h5>
                                 </div>
                             </div>
@@ -403,16 +456,16 @@
                         </div>
                         <div class="project column green-card wow fadeInLeft" data-wow-delay="0.2s">
                             <div class="image responsive-img justify-center align-center">
-                                <img src="./app/img/orto.JPG" alt="OrtoControl" title="OrtoControl" />
+                                <img src="./app/img/igate.jpg" alt="OrtoControl" title="OrtoControl" />
                             </div>
                             <div class="white-space-16"></div>
                             <div class="information align-center">
                                 <div class="title column">
                                     <h2 class="color-darkAqua">
-                                        OrtodicalControl
+                                        iGate
                                     </h2>
-                                    <a class="color-gray font-tiny" href="http://www.ortocontol.com" target="_blank" rel="nofollow">
-                                        www.ortocontrol.com
+                                    <a class="color-gray font-tiny" href="https://www.igate.mx" target="_blank" rel="nofollow">
+                                        www.igate.mx
                                     </a>
                                 </div>
                                 <div class="description column">

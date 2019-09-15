@@ -339,16 +339,16 @@
                             </p>
                             <div class="white-space-8"></div>
                             <p>
-                                - Desarrollador Frontend medio tiempo en
-                                <b><a rel="nofollow" target="_blank" href="https://www.chicleypegacreativo.com/">Chicle y Pega - Estudio Creativo</a></b>
+                                - Gestor Web WordPress: 
+                                <b><a rel="nofollow" target="_blank" href="http://www.ocho32.com">Ocho32</a></b>
                             </p>
                             <p>
-                                - Gestor de contenido Web WordPress medio tiempo en
-                                <b><a rel="nofollow" target="_blank" href="http://www.ocho32.com/">Ocho32</a></b>
-                            </p>
-                            <p>
-                                - <b>ACTUAL</b> Desarrollador Web tiempo completo en
+                                - Desarrollador Fullstack Web: 
                                 <b><a rel="nofollow" target="_blank" href="http://www.dwitmexico.com/">Dwit México</a></b>
+                            </p>
+                            <p>
+                                - <b>ACTUAL</b> Desarrollador Fullstack Web: 
+                                <b><a rel="nofollow" target="_blank" href="https://absolemarketing.com/">Absolem Marketing</a></b>
                             </p>
                             <div class="white-space-16"></div>
                             <p>
@@ -360,7 +360,7 @@
                             </p>
                             <p>
                                 - Desarrollador Web:
-                                <b><a rel="nofollow" target="_blank" href="http://www.em-sistemas.net/">EM-Sistemas</a></b>
+                                <b><a rel="nofollow" target="_blank" href="https://www.bestlinecancun.com/">Best Line Cancún</a></b>
                             </p>
                             <div class="white-space-64"></div>
                         </div>
@@ -383,16 +383,16 @@
                         <div class="project-container row-responsive">
                             <div class="project column wow fadeInLeft" data-wow-delay="0.1s" id="buenosdias">
                                 <div class="image responsive-img justify-center align-center">
-                                    <img src="./app/img/buenosdias.png" alt="Buenos días México" title="Buenos días México" />
+                                    <img src="./app/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="information align-center">
                                     <div class="title column">
                                         <h2 class="color-darkAqua">
-                                            Buenos días México
+                                            Best Line Cancún
                                         </h2>
-                                        <a class="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="nofollow">
-                                            www.buenosdiasmexico.mx
+                                        <a class="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="nofollow">
+                                            www.bestlinecancun.com
                                         </a>
                                     </div>
                                     <div class="description column">
@@ -408,16 +408,16 @@
                             </div>
                             <div class="project column wow fadeInLeft" data-wow-delay="0.2s" id="bece">
                                 <div class="image responsive-img justify-center align-center">
-                                    <img src="./app/img/bece.png" alt="BéCé Online" title="BéCé Online" />
+                                    <img src="./app/img/buenosdias.png" alt="Buenos días México" title="Buenos días México" />
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="information align-center">
                                     <div class="title column">
                                         <h2 class="color-darkAqua">
-                                            BéCé Online
+                                            Buenos días México
                                         </h2>
-                                        <a class="color-gray font-tiny" href="http://test.dwitmexico.com/" target="_blank" rel="nofollow">
-                                            www.beceonlie.com
+                                        <a class="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="nofollow">
+                                            www.buenosdiasmexico.mx
                                         </a>
                                     </div>
                                     <div class="description column">
@@ -436,16 +436,16 @@
                         <div class="project-container row-responsive">
                             <div class="project column wow fadeInLeft" data-wow-delay="0.1s" id="buenosdias">
                                 <div class="image responsive-img justify-center align-center">
-                                    <img src="./app/img/em.png" alt="EM-Sistemas" title="EM-Sistemas" />
+                                    <img src="./app/img/delaluz.png" alt="EM-Sistemas" title="EM-Sistemas" />
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="information align-center">
                                     <div class="title column">
                                         <h2 class="color-darkAqua">
-                                            EM-Sistemas
+                                            De la Luz
                                         </h2>
-                                        <a class="color-gray font-tiny" href="https://www.em-sistemas.net/" target="_blank" rel="nofollow">
-                                            www.em-sistemas.net
+                                        <a class="color-gray font-tiny" href="http://www.delaluz.com.mx/" target="_blank" rel="nofollow">
+                                            www.delaluz.com.mx
                                         </a>
                                     </div>
                                     <div class="description column">
@@ -461,24 +461,24 @@
                             </div>
                             <div class="project column wow fadeInLeft" data-wow-delay="0.2s" id="bece">
                                 <div class="image responsive-img justify-center align-center">
-                                    <img src="./app/img/orto.JPG" alt="OrtoControl" title="OrtoControl" />
+                                    <img src="./app/img/igate.jpg" alt="OrtoControl" title="OrtoControl" />
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="information align-center">
                                     <div class="title column">
                                         <h2 class="color-darkAqua">
-                                            OrtodicalControl
+                                            iGate
                                         </h2>
-                                        <a class="color-gray font-tiny" href="http://www.ortocontol.com" target="_blank" rel="nofollow">
-                                            www.ortocontrol.com
+                                        <a class="color-gray font-tiny" href="https://igate.mx/" target="_blank" rel="nofollow">
+                                            www.igate.mx
                                         </a>
                                     </div>
                                     <div class="description column">
                                         <h5 class="color-gray">
-                                            App Android
+                                            App Android, IOS
                                         </h5>
                                         <h5 class="color-gray">
-                                            API
+                                            Web API
                                         </h5>
                                     </div>
                                 </div>
