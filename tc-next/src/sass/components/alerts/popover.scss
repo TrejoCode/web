@@ -1,0 +1,16 @@
+
+.popover-top {
+    padding: 10px 0;
+    background-color: $aqua;
+    a {
+        font-size: 0.93rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .popover-top {
+        a { font-size: 0.9rem; }
+    }
+
+}
