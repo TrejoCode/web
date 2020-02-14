@@ -3,6 +3,11 @@ header {
     height: 100px;
     border-bottom: 1px solid #e9e9e9;
 
+    .right {        
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     nav {
         font-weight: $weightMedium;
         justify-content: flex-end;
@@ -21,31 +26,31 @@ header {
         &:hover { color: $aqua; }
     }
 
-}
-
-@media screen and (max-width: 992px) {
-    header {
-        .left {
-            width: 20%;
+    @media screen and (max-width: 992px) {
+        header {
+            .left {
+                width: 20%;
+            }
+    
+            .right  {
+                width: 80%;
+            }
+    
+            nav {
+                a { 
+                    font-size: $fontText;
+                    padding: 0 $paddingNormal;                
+                }        
+            }
+    
         }
-
-        .right  {
-            width: 80%;
-        }
-
-        nav {
-            a { 
-                font-size: $fontText;
-                padding: 0 $paddingNormal;                
-            }        
-        }
-
     }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        .left { width: 100%; }
-        .right nav { display: none; }
+    
+    @media screen and (max-width: 768px) {
+        header {
+            .left { width: 100%; }
+            .right nav { display: none; }
+        }
     }
+
 }

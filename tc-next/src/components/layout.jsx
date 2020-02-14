@@ -45,7 +45,7 @@ const Layout = (props) => {
                 {/* <link rel="apple-touch-icon" href="./app/img/icons/icon-96.png" /> */}
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
                 {/* --- Fonts --- */}
-                <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
             </Head>
             <Header />
             { children }

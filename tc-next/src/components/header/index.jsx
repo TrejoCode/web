@@ -17,7 +17,7 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
-                <div className="right align-center">
+                <div className="right full">
                     <nav>
                         <a href="#home" className="wow fadeInLeft" data-wow-delay="0.2s">
                             INICIO
