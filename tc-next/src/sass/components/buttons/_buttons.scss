@@ -1,3 +1,12 @@
+/**
+* @name: buttons.scss
+* @description: Estilos del los botones
+*/
+
+button, a, .btn {
+    cursor: pointer;
+    font-family: $Roboto;
+}
 
 .btn {
     cursor: pointer;

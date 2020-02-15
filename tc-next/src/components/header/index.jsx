@@ -1,6 +1,6 @@
 /**
- * @author trejocode
  * @version 1.0.0
+ * @author trejocode
  * @description Componente del Header
 */
 

@@ -1,17 +1,21 @@
 
-    /*    PADDINGS, MARGINS
+/*    PADDINGS, MARGINS
 
-        This properties also applies for 'Margins'
+    This properties also applies for 'Margins'
 
-    */
+*/
 
-    $paddingNormal: 8px;
-    $paddingMedium: 16px;
-    $paddingSemi: 24px;
-    $paddingLarge: 32px;
-    $paddingHuge: 48px;
+$paddingNormal: 8px;
+$paddingMedium: 16px;
+$paddingSemi:   24px;
+$paddingLarge:  32px;
+$paddingHuge:   48px;
 
 /*    WHITE SPACES    */
+
+.white-space-4 {
+    height: 4px;
+}
 
 .white-space-8 {
     height: 8px;

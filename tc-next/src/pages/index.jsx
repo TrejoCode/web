@@ -28,7 +28,7 @@ const PageIndex = () => (
 							</a>
 						</div>
 					</div>
-					<div className="right">
+					<div className="right align-center justify-center">
 						<div className="reponsive-img justify-center align-center wow fadeIn" data-wow-delay="0.3s">
 							<img src="/img/banner-devices.png" alt="Flat devices" title="Flat devices" />
 						</div>
@@ -227,7 +227,7 @@ const PageIndex = () => (
 						<div className="white-space-8"></div>
 						<p>
 							Cursé en la Universidad Politécnica de Quintana Roo la Ingeniería en Software en la generación 2015 - 2018, durante mi formación adquirí conocimiento en desarrollo Web, aplicaciones móviles, sistemas operativos y desarrollo de Software en general, mi proyecto de titulación:
-							<b><a href="http://new.upqroo.edu.mx/" target="_blank">new.upqroo.com</a></b>, sitio Web de la Universidad.
+							<b><a href="http://new.upqroo.edu.mx/" rel="noopener" target="_blank">new.upqroo.com</a></b>, sitio Web de la Universidad.
 						</p>
 						<div className="white-space-16"></div>
 						<p>
@@ -236,15 +236,15 @@ const PageIndex = () => (
 						<div className="white-space-8"></div>
 						<p>
 							- Gestor Web WordPress: 
-							<b><a rel="nofollow" target="_blank" href="http://www.ocho32.com">Ocho32</a></b>
+							<b><a rel="noopener" target="_blank" href="http://www.ocho32.com">Ocho32</a></b>
 						</p>
 						<p>
 							- Desarrollador Fullstack Web: 
-							<b><a rel="nofollow" target="_blank" href="http://www.dwitmexico.com/">Dwit México</a></b>
+							<b><a rel="noopener" target="_blank" href="http://www.dwitmexico.com/">Dwit México</a></b>
 						</p>
 						<p>
 							- <b>ACTUAL</b> Desarrollador Fullstack Web: 
-							<b><a rel="nofollow" target="_blank" href="https://absolemarketing.com/">Absolem Marketing</a></b>
+							<b><a rel="noopener" target="_blank" href="https://absolemarketing.com/">Absolem Marketing</a></b>
 						</p>
 						<div className="white-space-16"></div>
 						<p>
@@ -256,7 +256,7 @@ const PageIndex = () => (
 						</p>
 						<p>
 							- Desarrollador Web:
-							<b><a rel="nofollow" target="_blank" href="https://www.bestlinecancun.com/">Best Line Cancún</a></b>
+							<b><a rel="noopener" target="_blank" href="https://www.bestlinecancun.com/">Best Line Cancún</a></b>
 						</p>
 						<div className="white-space-64"></div>
 					</div>
@@ -274,7 +274,7 @@ const PageIndex = () => (
 					</p>
 					<div className="white-space-32"></div>
 					<div className="project-container row-responsive">
-						<div className="project column wow fadeInLeft" data-wow-delay="0.1s" id="buenosdias">
+						<div className="project project-aqua column wow fadeInLeft" data-wow-delay="0.1s" >
 							<div className="image responsive-img justify-center align-center">
 								<img src="/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
 							</div>
@@ -284,7 +284,7 @@ const PageIndex = () => (
 									<h2 className="color-darkAqua">
 										Best Line Cancún
 									</h2>
-									<a className="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="nofollow">
+									<a className="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="noopener">
 										www.bestlinecancun.com
 									</a>
 								</div>
@@ -299,7 +299,7 @@ const PageIndex = () => (
 							</div>
 							<div className="white-space-16"></div>
 						</div>
-						<div className="project column wow fadeInLeft" data-wow-delay="0.2s" id="bece">
+						<div className="project project-green column wow fadeInLeft" data-wow-delay="0.2s">
 							<div className="image responsive-img justify-center align-center">
 								<img src="/img/buenosdias.png" alt="Buenos días México" title="Buenos días México" />
 							</div>
@@ -309,7 +309,7 @@ const PageIndex = () => (
 									<h2 className="color-darkAqua">
 										Buenos días México
 									</h2>
-									<a className="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="nofollow">
+									<a className="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="noopener">
 										www.buenosdiasmexico.mx
 									</a>
 								</div>
@@ -327,7 +327,7 @@ const PageIndex = () => (
 					</div>
 					<div className="white-space-32"></div>
 					<div className="project-container row-responsive">
-						<div className="project column wow fadeInLeft" data-wow-delay="0.1s" id="buenosdias">
+						<div className="project project-aqua column wow fadeInLeft" data-wow-delay="0.1s">
 							<div className="image responsive-img justify-center align-center">
 								<img src="/img/delaluz.png" alt="EM-Sistemas" title="EM-Sistemas" />
 							</div>
@@ -337,7 +337,7 @@ const PageIndex = () => (
 									<h2 className="color-darkAqua">
 										De la Luz
 									</h2>
-									<a className="color-gray font-tiny" href="http://www.delaluz.com.mx/" target="_blank" rel="nofollow">
+									<a className="color-gray font-tiny" href="http://www.delaluz.com.mx/" target="_blank" rel="noopener">
 										www.delaluz.com.mx
 									</a>
 								</div>
@@ -352,7 +352,7 @@ const PageIndex = () => (
 							</div>
 							<div className="white-space-16"></div>
 						</div>
-						<div className="project column wow fadeInLeft" data-wow-delay="0.2s" id="bece">
+						<div className="project project-green column wow fadeInLeft" data-wow-delay="0.2s">
 							<div className="image responsive-img justify-center align-center">
 								<img src="/img/igate.jpg" alt="OrtoControl" title="OrtoControl" />
 							</div>
@@ -362,7 +362,7 @@ const PageIndex = () => (
 									<h2 className="color-darkAqua">
 										iGate
 									</h2>
-									<a className="color-gray font-tiny" href="https://igate.mx/" target="_blank" rel="nofollow">
+									<a className="color-gray font-tiny" href="https://igate.mx/" target="_blank" rel="noopener">
 										www.igate.mx
 									</a>
 								</div>

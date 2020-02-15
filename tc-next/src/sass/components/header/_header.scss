@@ -47,10 +47,8 @@ header {
     }
     
     @media screen and (max-width: 768px) {
-        header {
-            .left { width: 100%; }
-            .right nav { display: none; }
-        }
+        .left { width: 100%; }
+        .right nav { display: none; }
     }
 
 }

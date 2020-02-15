@@ -1,82 +1,117 @@
 
-    /*    FONT FAMILIES    */
-    
-    $Roboto: 'Roboto', sans-serif;
-    
-   
-    /*    FONT SIZES    */
+/*    FONT FAMILIES    */
 
-    $fontMini:      0.8em;
-    $fontTiny:      0.9em;
-    $fontText:      0.93em;
-    $fontSmall:     1em;
-    $fontRegular:   1.2em;
-    $fontMedium:    1.4em;
-    $fontLarge:     1.6em;
-    $fontHuge:      1.8em;
-    $fontDouble:    2em;
-    $fontTriple:    3em;
+$Roboto: 'Roboto', sans-serif;
 
 
-    /*    FONT WEIGHTS 
+/*    FONT SIZES    */
 
-        - Based on 'Roboto'
+$fontMini:      0.8rem;
+$fontTiny:      0.9rem;
+$fontText:      0.93rem;
+$fontSmall:     1rem;
+$fontRegular:   1.2rem;
+$fontMedium:    1.4rem;
+$fontSemi:      1.6rem;
+$fontLarge:     1.8rem;
+$fontDouble:    2rem;
+$fontTriple:    2.5rem;
 
-    */
-    
-    $weightRegular: 400;
-    $weightMedium: 500;
-    $weightBold: 700;
-
-
-::selection {
-    color: $white;
-    background-color: $black;
+.font-triple {
+	font-size: $fontTriple;
 }
 
-a {
-    font-family: $Roboto;
+.font-double {
+	font-size: $fontDouble;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+.font-large {
+	font-size: $fontLarge;
+}
+
+.font-semi {
+	font-size: $fontSemi;
+}
+
+.font-medium {
+	font-size: $fontMedium;
+}
+
+.font-regular {
+	font-size: $fontRegular;
+}
+
+.font-small {
+	font-size: $fontSmall;
+}
+
+.font-text {
+	font-size: $fontText;
+}
+
+.font-tiny {
+	font-size: $fontTiny;
+}
+
+.font-mini {
+	font-size: $fontMini;
+}
+
+/*    FONT WEIGHTS 
+
+    - Based on 'Roboto'
+
+*/
+
+$weightRegular: 400;
+$weightMedium: 500;
+$weightBold: 700;
+
+h1, h2, h3, h4, h5, h6, p, a, b, span, 
+th, td, li, label, strong, legend, em {
     color: $black;
     font-family: $Roboto;
 }
 
 h1 {
-    font-size: $fontHuge;
-    font-weight: $weightBold;
+	font-size: $fontLarge;
+	font-weight: $weightBold;
 }
 
 h2 {
-    font-size: $fontLarge;
-    font-weight: $weightBold;
+	font-size: $fontSemi;
+	font-weight: $weightBold;
 }
 
 h3 {
-    font-size: $fontMedium;
-    font-weight: $weightBold;
+	font-size: $fontMedium;
+	font-weight: $weightMedium;
 }
 
 h4 {
-    font-size: $fontRegular;
-    font-weight: $weightMedium;
+	font-size: $fontRegular;
+	font-weight: $weightMedium;
 }
 
 h5 {
-    font-size: $fontText;
-    font-weight: $weightMedium;
+	font-size: $fontSmall;
+	font-weight: $weightRegular;
 }
 
 h6 {
-    font-size: $fontMedium;
-    font-weight: $weightRegular;
+	font-size: $fontText;
+	font-weight: $weightRegular;
 }
 
-p {
+p, a, li, label {
+	line-height: 1.5rem;
     font-size: $fontText;
-    line-height: 24px;
     color: $gray;
+}
+
+b, i, span, strong, em {
+	color: inherit;
+	font-size: inherit;
 }
 
 .uppercase {
@@ -110,4 +145,12 @@ p {
 ::selection {
     background-color: $aqua;
     color: $white;
+}
+
+@media screen and (max-width: 768px) {
+
+	.font-triple { font-size: $fontDouble; }
+	
+	.font-double { font-size: $fontLarge; }
+
 }
