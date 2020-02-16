@@ -1,7 +1,7 @@
 /**
- * @description Page for /index
- * @author trejocode
  * @version 1.0.0
+ * @author trejocode
+ * @description Page for /index
 */
 
 import React from 'react';
@@ -17,12 +17,16 @@ const PageIndex = () => (
 							¡Hola, soy trejocode! 👋
 						</h1>
 						<div className="white-space-24"></div>
-						<h3 className="color-lightBlue">
-							Diseño y desarrollo sitios Web increíbles, <br />
-							responsivos, rápidos y autoadministrables
-						</h3>
+						<div className="column">
+							<h3 className="color-lightBlue">
+								Diseño y desarrollo sitios Web increíbles
+							</h3>
+							<h3 className="color-lightBlue">
+								responsivos, rápidos y autoadministrables
+							</h3>
+						</div>
 						<div className="white-space-24"></div>
-						<div className="btn-container">
+						<div className="btn-container full">
 							<a href="#services" className="btn btn-large btn-aqua btn-radius color-white weight-medium text-center">
 								CONOCER MÁS
 							</a>

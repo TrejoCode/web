@@ -9,9 +9,8 @@ button, a, .btn {
 }
 
 .btn {
-    cursor: pointer;
-    min-height: 32px;
     font-size: $fontRegular;
+    padding: $paddingNormal $paddingMedium;
     transition: 400ms background-color ease-in-out;
 }
 
