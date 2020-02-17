@@ -101,9 +101,8 @@
 
     .about .right {
         width: 60%;
-        p {
-            padding: 0 $paddingNormal;
-        }
+        h2 { font-size: 1.5rem; }
+        p { padding: 0 $paddingNormal; }
     }
 
     .portfolio {

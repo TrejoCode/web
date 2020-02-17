@@ -7,6 +7,7 @@
 import React    from 'react';
 import Head     from 'next/head';
 import Header   from '../components/header';
+import Footer   from '../components/footer';
 
 // Hoja de estilos
 import '../sass/style.scss';
@@ -18,6 +19,7 @@ import '../sass/style.scss';
 */
 
 const Layout = (props) => {
+
     const { children } = props;
     return(
         <div className="flex main column">
@@ -33,7 +35,6 @@ const Layout = (props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Diseño y desarrollo Web, Progressive Web Apps en Cancún || Sergio Alejandro Trejo | trejocode" />
                 <meta name="keywords" content="Diseño Web, Desarrollo Web, Programación, Aplicaciones, Progressive Web App cancún" />
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
                 {/* <!-- Open Graph --> */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.trejocode.com/" />
@@ -49,6 +50,7 @@ const Layout = (props) => {
             </Head>
             <Header />
             { children }
+            <Footer />
         </div>
     );
 
