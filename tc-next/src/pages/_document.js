@@ -19,8 +19,8 @@ class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
-					<script deffer src="https://kit.fontawesome.com/7621181617.js" crossorigin="anonymous"></script>
-					<script deffer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+					<script deffer = { true } src="https://kit.fontawesome.com/7621181617.js" crossOrigin="anonymous"></script>
+					<script deffer = { true } src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 					<script>new WOW().init();</script>
 				</body>
 			</Html>
