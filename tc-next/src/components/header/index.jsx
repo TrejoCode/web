@@ -36,7 +36,7 @@ const Header = () => {
                             CONTÁCTAME
                         </a>
                     </nav>
-                    {/* <div className="social auto wow fadeInLeft" data-wow-delay="0.3s">
+                    <div className="social auto wow fadeInLeft" data-wow-delay="0.3s">
                         <a aria-label="LinkedIn" href=" https://www.linkedin.com/in/sergio-alejandro-trejo-cuxim-11b40a17a" rel="noopener" target="_blank">
                             <AiFillLinkedin />
                         </a>
@@ -49,7 +49,7 @@ const Header = () => {
                         <a aria-label="Instagram" href="https://www.instagram.com/trejocode/" rel="noopener" target="_blank">
                             <AiFillInstagram />
                         </a>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </header>
