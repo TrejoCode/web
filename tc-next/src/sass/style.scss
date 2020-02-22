@@ -1,7 +1,4 @@
 
-$dev: false;
-
-@import './core/dev';
 @import './core/trejocode';
 @import './core/colors';
 @import './core/fonts';
@@ -16,5 +13,3 @@ $dev: false;
 
 @import './pages/home';
 @import './pages/portafolio';
-
-@if ($dev) {  @include dev; }
