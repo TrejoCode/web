@@ -1,7 +1,7 @@
 /**
- * @version 1.1.0
- * @author trejocode
- * @description Componente del Header
+ * @version 1.0.0
+ * @author Sergio - Trejocode
+ * @description Componente del <Header />
 */
 
 import React from 'react';
@@ -11,42 +11,46 @@ const Header = () => {
     return(
         <header className="justify-center">
             <div className="container">
-                <div className="left align-center auto">
+                <div className="left row align-center auto">
                     <div className="logo">
                         <a href="/">
-                            <img src="/img/logo.png" alt="trejocode logo" title="trejocode logo" className="wow fadeInLeft" />
+                            <img src="/img/logo.png" alt="Trejocode logo" title="Trejocode logo" className="wow fadeInLeft" />
                         </a>
                     </div>
                 </div>
                 <div className="right full">
                     <nav>
-                        <a href="#home" className="wow fadeInLeft" data-wow-delay="0.2s">
+                        <a href="#home" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
                             INICIO
                         </a>
-                        <a href="#services" className="wow fadeInLeft" data-wow-delay="0.2s">
+                        <a href="#services" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
                             SERVICIOS
                         </a>
-                        <a href="#about" className="wow fadeInLeft" data-wow-delay="0.3s">
+                        <a href="#about" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
                             CÓNOCEME
                         </a>
-                        <a href="#projects" className="wow fadeInLeft" data-wow-delay="0.3s">
+                        <a href="#projects" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
                             PROYECTOS
                         </a>
-                        <a href="#contact" className="wow fadeInLeft" data-wow-delay="0.4s">
+                        <a href="#contact" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="300ms">
                             CONTÁCTAME
                         </a>
                     </nav>
-                    <div className="social auto wow fadeInLeft" data-wow-delay="0.3s">
-                        <a aria-label="LinkedIn" href=" https://www.linkedin.com/in/sergio-alejandro-trejo-cuxim-11b40a17a" rel="noopener" target="_blank">
+                    <div className="social auto wow fadeInLeft">
+                        <a aria-label="LinkedIn" data-wow-delay="350ms" rel="noopener" target="_blank" className="wow fadeIn font-small"
+                        href="https://www.linkedin.com/in/sergio-alejandro-trejo-cuxim-11b40a17a">
                             <AiFillLinkedin />
                         </a>
-                        <a aria-label="Facebook" href="https://www.facebook.com/TrejoCode/" rel="noopener" target="_blank">
+                        <a aria-label="Facebook" data-wow-delay="350ms" rel="noopener" target="_blank" className="wow fadeIn font-small"
+                        href="https://www.facebook.com/TrejoCode/">
                             <AiFillFacebook />
                         </a>
-                        <a aria-label="Youtube" href="https://www.youtube.com/trejocode" rel="noopener" target="_blank">
+                        <a aria-label="Youtube" data-wow-delay="400ms" rel="noopener" target="_blank" className="wow fadeIn font-small"
+                        href="https://www.youtube.com/trejocode">
                             <AiFillYoutube />
                         </a>
-                        <a aria-label="Instagram" href="https://www.instagram.com/trejocode/" rel="noopener" target="_blank">
+                        <a aria-label="Instagram" data-wow-delay="400ms" rel="noopener" target="_blank" className="wow fadeIn font-small"
+                        href="https://www.instagram.com/trejocode/" >
                             <AiFillInstagram />
                         </a>
                     </div>

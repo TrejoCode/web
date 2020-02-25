@@ -1,31 +1,33 @@
 /**
-* @name: buttons.scss
-* @description: Estilos del los botones
+ * @version 1.0.0
+ * @description Estilos para los botones
 */
 
-button, a, .btn {
+button, .btn {
     cursor: pointer;
-    font-family: $Roboto;
 }
 
 .btn {
-    font-size: $fontRegular;
-    padding: $paddingNormal $paddingMedium;
-    transition: 400ms background-color ease-in-out;
-}
-
-.btn:hover {
-    background-color: $darkAqua;
-}
-
-.btn-radius {
     border-radius: 4px;
+    font-size: $fontSmall;
+    font-weight: $weightMedium;
+    transition: all 250ms ease-in-out;
+    padding: $paddingNormal $paddingMedium;
 }
 
-.btn-large {
-    padding: $paddingMedium;
+// Sizing
+.btn-medium {
+    padding: 14px $paddingMedium;
 }
 
-.btn-aqua {
-    background-color: $aqua;
+.btn-primary {
+    color: $white;
+    background-color: $primary;
+    &:hover {
+        background-color: $primary-alt;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
 }

@@ -1,7 +1,11 @@
+/**
+ * @version 1.0.0
+ * @description Estilos para las fuentes de texto
+*/
 
 /*    FONT FAMILIES    */
 
-$Roboto: 'Roboto', sans-serif;
+$IBM: 'IBM Plex Sans', sans-serif;
 
 
 /*    FONT SIZES    */
@@ -59,18 +63,19 @@ $fontTriple:    2.5rem;
 
 /*    FONT WEIGHTS 
 
-    - Based on 'Roboto'
+    - Based on 'IBM Plex Sans'
 
 */
 
 $weightRegular: 400;
-$weightMedium: 500;
-$weightBold: 700;
+$weightMedium: 	500;
+$weightSemi: 	600;
+$weightBold: 	700;
 
-h1, h2, h3, h4, h5, h6, p, a, b, span, 
-th, td, li, label, strong, legend, em {
+h1, h2, h3, h4, h5, h6, p, a, b, span, th, td, li,
+label, strong, legend, em, button, select, option, input {
     color: $black;
-    font-family: $Roboto;
+    font-family: $IBM;
 }
 
 h1 {
@@ -80,12 +85,12 @@ h1 {
 
 h2 {
 	font-size: $fontSemi;
-	font-weight: $weightBold;
+	font-weight: $weightSemi;
 }
 
 h3 {
 	font-size: $fontMedium;
-	font-weight: $weightMedium;
+	font-weight: $weightSemi;
 }
 
 h4 {
@@ -95,7 +100,7 @@ h4 {
 
 h5 {
 	font-size: $fontSmall;
-	font-weight: $weightRegular;
+	font-weight: $weightMedium;
 }
 
 h6 {
@@ -104,9 +109,9 @@ h6 {
 }
 
 p, a, li, label {
+	color: $gray;
 	line-height: 1.5rem;
     font-size: $fontText;
-    color: $gray;
 }
 
 b, i, span, strong, em {
@@ -122,29 +127,27 @@ b, i, span, strong, em {
     text-decoration: underline;
 }
 
+
+.weight-regular {
+	font-weight: $weightRegular;
+}
+
 .weight-medium {
     font-weight: $weightMedium;
+}
+
+.weight-semi {
+	font-weight: $weightSemi;
 }
 
 .weight-bold {
     font-weight: $weightBold;
 }
 
-.font-mini {
-    font-size: $fontMini;
-}
-
-.font-tiny {
-    font-size: $fontTiny;
-}
-
-.font-text {
-    font-size: $fontText;
-}
 
 ::selection {
-    background-color: $aqua;
-    color: $white;
+	color: $secondary;
+    background-color: $primary;
 }
 
 @media screen and (max-width: 768px) {

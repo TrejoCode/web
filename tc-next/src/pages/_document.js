@@ -1,7 +1,7 @@
 /**
  * @version 1.0.0
- * @author trejocode
- * @description Plantilla HTML inicial.
+ * @author Sergio - Trejocode
+ * @description Plantilla HTML inicial
 */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 

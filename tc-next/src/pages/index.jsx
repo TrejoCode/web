@@ -1,7 +1,7 @@
 /**
  * @version 1.0.0
- * @author trejocode
- * @description Page for /index
+ * @author Sergio - Trejocode
+ * @description Página /index
 */
 
 import React from 'react';
@@ -12,24 +12,25 @@ const PageIndex = () => {
 	return(	
 		<Layout>
 			<div className="home column" id="home">
-				<div className="banner justify-center wow fadeIn" data-wow-delay="0.2s">
+				<div className="banner justify-center wow fadeIn" data-wow-delay="200ms">
 					<div className="container row-responsive">
 						<div className="left column">
-							<h1 className="color-darkBlue">
-								¡Hola, soy trejocode! 👋
+							<h1 className="color-secondary">
+								¡Hola, i'm <span className="color-primary">trejocode!</span> 👋
 							</h1>
 							<div className="white-space-24"></div>
 							<div className="column">
-								<h3 className="color-lightBlue">
+								<h3 className="color-secondary-alt">
 									Diseño y desarrollo sitios Web increíbles
 								</h3>
-								<h3 className="color-lightBlue">
+								<div className="white-space-4"></div>
+								<h3 className="color-secondary-alt">
 									responsivos, rápidos y autoadministrables
 								</h3>
 							</div>
 							<div className="white-space-24"></div>
 							<div className="btn-container full">
-								<a href="#services" className="btn btn-large btn-aqua btn-radius color-white weight-medium text-center">
+								<a href="#services" className="btn btn-medium btn-primary text-center">
 									CONOCER MÁS
 								</a>
 							</div>

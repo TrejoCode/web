@@ -1,7 +1,7 @@
 /**
- * @author trejocode
  * @version 1.0.0
- * @description Template general para todos las páginas
+ * @author Sergio - Trejocode
+ * @description Componente <Layout />
 */
 
 import React    from 'react';
@@ -46,7 +46,7 @@ const Layout = (props) => {
                 {/* <link rel="apple-touch-icon" href="./app/img/icons/icon-96.png" /> */}
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
                 {/* --- Fonts --- */}
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+                <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&display=swap" rel="stylesheet" />
             </Head>
             <Header />
             { children }

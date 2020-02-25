@@ -1,10 +1,21 @@
+/**
+ * @version 1.0.0
+ * @description Base de colores
+*/
 
+$primary:       #2bb593;
+$primary-alt:   #258395;
+$secondary:     #263d54;
+$secondary-alt: #516376;
+$success:       #27ae60;
+$warning:       #f39c12;
+$danger:        #c0392b;
+$info:          #258395;
 
-$black:     #000000;
+$black:     #262626;
 $white:     #FFFFFF;
-$lightBlue: #516376;  
 $gray:      #6c6c6c;  
-$darkGray:  #4b4b4b;
+$darkgray:  #4b4b4b;
 
 $darkBlue:  #263d54;
 $darkAqua:  #258395;
@@ -12,34 +23,50 @@ $aqua:      #33c8a3;
 $lightAqua: #ebf3f5;
 
 
-.color-black {
-    color: $black;
+.color-primary {
+    color: $primary;
 }
 
-.color-white {
-    color: $white;
+.color-primary-alt {
+    color: $primary-alt;
 }
 
-.color-lightBlue {
-    color: $lightBlue;
+.color-secondary {
+    color: $secondary;
 }
 
-.color-darkBlue {
-    color: $darkBlue;
+.color-secondary-alt {
+    color: $secondary-alt;
 }
 
-.color-aqua {
-    color: $aqua;
+.color-success {
+    color: $success;
 }
 
-.color-darkAqua {
-    color: $darkAqua;
+.color-warning {
+    color: $warning;
+}
+
+.color-danger {
+    color: $danger;
+}
+
+.color-info {
+    color: $info;
 }
 
 .color-gray {
     color: $gray;
 }
 
-.color-darkGray {
-    color: $darkGray;
+.color-darkgray {
+    color: $darkgray;
+}
+
+.color-black {
+    color: $black;
+}
+
+.color-white {
+    color: $white;
 }
