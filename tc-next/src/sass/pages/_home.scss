@@ -3,108 +3,113 @@
 
     .banner {
         min-height: 700px;
-    }
 
-    .banner .left {
-        width: 50%;
-        justify-content: center;
-        .btn {
-            width: 430px;
+        .left {
+            width: 50%;
+            justify-content: center;
+            .btn {
+                width: 430px;
+            }
         }
-    }
 
-    .banner .right {
-        width: 50%;
-        img {
-            max-width: 400px;
+        .right {
+            width: 50%;
+            img {
+                max-width: 400px;
+            }
         }
+
     }
 
     .services {
+        padding: 4rem 0;
         min-height: 600px;
         background-color: $lightBg;
-    }
 
-    .services .left {
-        top: 0;
-        width: 40%;
-        position: sticky;  
-        align-self: flex-start;
-        margin-right: $paddingLarge;
-        p {
-            padding: 0 $paddingNormal;
-            b { color: $primary-alt; }
-        }
-    }
-
-    .services .right {
-        width: 60%;
-        margin-left: $paddingNormal;
-    }
-
-    .services .card {
-        width: 50%;
-        background-color: $white;
-        box-shadow: 2px 4px 2px #e9e9e9;
-        transition: all 250ms ease-in-out;
-        &:first-of-type { margin-right: $paddingNormal; }
-        &:last-of-type { margin-left: $paddingNormal; }
-        &:hover { box-shadow: 0px 4px 3px rgba(37, 131, 149, 0.3); }
-    }
-
-    .services .card-head {
-        background-color: $primary;
-        border-radius: 4px 4px 0 0;
-    }    
-
-    .services .card-head img {
-        border-radius: 4px 4px 0 0;
-    }
-
-    .services .card-body {
-        padding: $paddingMedium;
-        border-radius: 0 0 4px 4px;
-
-        .card-title {
-            font-size: $fontRegular;
+        .left {
+            top: 0;
+            width: 40%;
+            position: sticky;  
+            align-self: flex-start;
+            margin-right: $paddingLarge;
+            p {
+                padding: 0 $paddingNormal;
+                b { color: $primary-alt; }
+            }
         }
 
-        .card-description {
-           min-height: 90px; 
+        .right {
+            width: 60%;
+            margin-left: $paddingNormal;
         }
 
-        .card-footer {
-            height: 70px;
-            border-top: 2px solid $lightBg;
+        .card {
+            width: 50%;
+            background-color: $white;
+            box-shadow: 2px 4px 2px #e9e9e9;
+            transition: all 250ms ease-in-out;
+            &:first-of-type { margin-right: $paddingNormal; }
+            &:last-of-type { margin-left: $paddingNormal; }
+            &:hover { box-shadow: 0px 4px 3px rgba(37, 131, 149, 0.3); }
         }
 
-        .footer-content {
-            padding: $paddingNormal 0;
+        .card-head {
+            background-color: $primary;
+            border-radius: 4px 4px 0 0;
+
+            img { border-radius: 4px 4px 0 0; }
+
         }
-    }  
+
+        .card-body {
+            padding: $paddingMedium;
+            border-radius: 0 0 4px 4px;
+    
+            .card-title {
+                font-size: $fontRegular;
+            }
+    
+            .card-description {
+               min-height: 90px; 
+            }
+    
+            .card-footer {
+                height: 70px;
+                border-top: 2px solid $lightBg;
+            }
+    
+            .footer-content {
+                padding: $paddingNormal 0;
+            }
+        }
+
+    }
     
     .about {
+
         background-color: $white;
+
+        .left {
+            width: 40%;
+
+            .me-picture {
+                margin-bottom: $paddingLarge;
+                img { 
+                    height: 400px;
+                    padding-right: $paddingNormal;
+                }
+            }
+
+        }
+
+        .right {
+            width: 60%;
+            h2 { font-size: 1.55rem; }
+            p { padding: 0 $paddingNormal; }
+        }
+
     }
 
-    .about .left {
-        width: 40%;
-    }
-
-    .about .left .me-picture {
-        margin-bottom: $paddingLarge;
-    }
-
-    .about .left img {
-        height: 400px;
-        padding-right: $paddingNormal;
-    }
-
-    .about .right {
-        width: 60%;
-        h2 { font-size: 1.55rem; }
-        p { padding: 0 $paddingNormal; }
-    }
 
     .portfolio {
         background-color: $lightBg;
@@ -164,23 +169,23 @@
 @media screen and (max-width: 992px) {
     
     .home {
-        .banner .left {
-            width: 60%;
-            .btn { width: 400px; }
-        }
 
-        .banner .right {
-            width: 40%;
-            img {
-                z-index: -1;
-                max-width: 300px;
+        .banner {
+            .left {
+                width: 60%;
+                .btn { width: 400px; }
+            }
+            .right {
+                width: 40%;
+                img {
+                    z-index: -1;
+                    max-width: 300px;
+                }
             }
         }
 
         .services {
-            .row-responsive-ipad {
-                flex-direction: column;
-            }
+            .row-responsive-ipad { flex-direction: column; }
 
             .left {
                 width: 100%;
@@ -191,45 +196,56 @@
                 width: 100%;
                 margin-bottom: $paddingLarge;
             }
-        }        
-
-        .about .right {
-            p { padding: 0; }   
         }
 
-        .about .left img {
-            width: 85%;
-            height: auto;
-            padding-right: 0;
-        }
+        .about {
+            .left {
+                img {
+                    width: 85%;
+                    height: auto;
+                    padding-right: 0;
+                }
+            }
 
-    }    
+            .right {
+                p { padding: 0; }   
+            }
+
+        }
+        
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
     .home {
-        .banner .left {
-            margin: $paddingLarge 0;
-            width: 100%;
-            align-items: center;
-            .btn-container { justify-content: center; }
-        }
 
-        .banner .right {
-            width: 100%;
-            margin: $paddingLarge 0;
+        .banner {
+            .left {
+                margin: $paddingLarge 0;
+                width: 100%;
+                align-items: center;
+                .btn-container { justify-content: center; }
+            }
+            .right {
+                width: 100%;
+                margin: $paddingLarge 0;
+            }
         }
+        
 
         .services {
-
-            .left { margin-right: 0; }
-
-            .left p {
-                padding: 0;
+            padding-bottom: 0;
+            .left { 
+                margin-right: 0; 
+                p { padding: 0; }
             }
-
-            .right { margin-left: 0; }
+            
+            .right { 
+                margin-left: 0; 
+                padding-top: 2rem;
+            }
 
             .card {
                 width: 100%;
@@ -238,27 +254,33 @@
                 &:last-of-type { margin-left: 0; }
             }
 
-            .card-head img { width: 100%; }
+            .card-head {
+                img { width: 100%; }
+            }
 
         }
 
-        .about .left {
-            width: 100%;
-            .me-picture{
-                margin-bottom: 0;
-                .responsive-img { justify-content: center; align-items: center; }
-            } 
-        }
+        .about {
+            
+            .left {
+                width: 100%;
+                .me-picture{
+                    margin-bottom: 0;
+                    .responsive-img { justify-content: center; align-items: center; }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
 
-        .about .right {
-            width: 100%;
-            p { padding: 0; }   
-        }
+            .right {
+                width: 100%;
+                p { padding: 0; }  
+            }
 
-        .about .left img {
-            width: 100%;
-            height: auto;
         }
+        
 
         .portfolio .project-container {
             justify-content: space-between;
@@ -308,12 +330,37 @@
 @media screen and (max-width: 576px) {
 
     .home {
-        .banner .left {
-            h3 {
-                text-align: center;
-                font-size: $fontRegular;
+
+        .banner {
+            .left {
+                h3 {
+                    text-align: center;
+                    font-size: $fontRegular;
+                }
+                br { display: none; }
             }
         }
+
+        .about {
+            .right {
+                h2 { font-size: 1.5rem; }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .home {
+
+        .about {
+            .right {
+                h2 { font-size: 1.37rem; }
+            }
+        }
+
     }
 
 }

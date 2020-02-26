@@ -21,12 +21,10 @@ const PageIndex = () => {
 							<div className="white-space-24"></div>
 							<div className="column">
 								<h3 className="color-secondary-alt">
-									Diseño y desarrollo sitios Web increíbles
-								</h3>
-								<div className="white-space-4"></div>
-								<h3 className="color-secondary-alt">
+									Diseño y desarrollo sitios Web increíbles <br/>
 									responsivos, rápidos y autoadministrables
 								</h3>
+								
 							</div>
 							<div className="white-space-24"></div>
 							<div className="btn-container full">
@@ -37,25 +35,26 @@ const PageIndex = () => {
 						</div>
 						<div className="right align-center justify-center">
 							<div className="reponsive-img justify-center align-center wow fadeIn" data-wow-delay="300ms">
-								<img src="/img/banner-devices.png" alt="Web and Apps" title="Web and Apps" />
+								<img src="/img/banner-devices.png" alt="Web y Apps" title="Web y Apps" />
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div className="services justify-center wow fadeIn" id="services">
 					<div className="container row-responsive row-responsive-ipad">
 						<div className="left column">
-							<div className="white-space-64"></div>
 							<h2 className="color-primary-alt">
-								<span className="color-primary weight-bold">{"{"}</span> SERVICIOS
+								<span className="color-primary weight-bold">{"{ "}</span> 
+								SERVICIOS
 							</h2>
 							<div className="white-space-16"></div>
 							<p className="text-justify weight-semi">
-								Concepto <b>+</b> diseño atractivo <b>+</b> desarrollo preciso <b>+</b> ultimas tecnologías <b>=</b> ¡Proyectos éxitosos y asombrosos!
+								Concepto <b>+</b> Diseño <b>+</b> Desarrollo <b>+</b> high techs <b>=</b> ¡Proyectos éxitosos y asombrosos!
 							</p>
 							<div className="white-space-8"></div>
 							<p className="text-justify weight-semi">
-								¡Trabajemos juntos! me encanta desarrollar Web, cuénteme su idea y haré todo lo demás.
+								¡Trabajemos juntos! Mi pasión es desarrollar la Web, cuénteme su idea y haré todo lo demás.
 							</p>
 							<div className="white-space-8"></div>
 							<p className="weight-medium">
@@ -70,28 +69,26 @@ const PageIndex = () => {
 								<b>1.- Idea</b>
 							</p>
 							<p className="weight-medium">
-								Escucho tus ideas y juntos encontramos cómo hacerlas realidad.
+								Escucho tus ideas y juntos encontramos el mejor producto.
 							</p>
 							<div className="white-space-16"></div>
 							<p className="weight-medium">
-								<b>2.- Análisis / Desarrollo</b>
+								<b>2.- Análisis y Desarrollo</b>
 							</p>
 							<p className="weight-medium">
-								Análisis y seguimiento a tu proyecto para darte la mejor solución. Después, iniciará la creación de tu proyecto.
+								Concepto, especificaciones establecidas para iniciar la creación del proyecto.
 							</p>
 							<div className="white-space-16"></div>
 							<p className="weight-medium">
 								<b>3.- Testing y Liberación</b>
 							</p>
 							<p className="weight-medium">
-								Pruebas funcionales, paso a paso, de usuarios, una vez garantizado el correcto funcionamiento se publicará tu proyecto.
+								Pruebas funcionales, paso a paso, tras garantizar el correcto funcionamiento se publicará el proyecto.
 							</p>
-							<div className="white-space-64"></div>
 						</div>
 						<div className="right column">
-							<div className="white-space-64"></div>
 							<div className="card-container row-responsive">
-								<div className="card column wow fadeIn" data-wow-delay="0.1s">
+								<div className="card column wow fadeIn" data-wow-delay="100ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
 											<img src="/img/design.jpg" alt="Diseño Web" title="Diseño Web" className="holder-image" />
@@ -106,8 +103,7 @@ const PageIndex = () => {
 										</p>
 										<div className="white-space-8"></div>
 										<p className="text-center font-tiny card-description">
-											Para que una página web sobresalga entre las demás, debe tener un diseño innovador y atrayente, además,
-											transmita de forma clara y precisa lo que se ofrece.
+											Para que el sitio Web sobresalga entre las demás, debe contar con un diseño innovador y atrayente, con ello transmitirá de la mejor forma lo grandioso del proyecto.
 										</p>
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
@@ -133,12 +129,12 @@ const PageIndex = () => {
 										</p>
 										<div className="white-space-8"></div>
 										<p className="text-center font-tiny card-description">
-											Maquetación, programación, testing, DevOps, mantenimiento y S.E.O. son actividades de un desarrollo Web exitoso, utilizando las mejores tecnologías actuales.
+											Maquetación, programación, testing, DevOps, mantenimiento y SEO, son actividades obligatorias para un desarrollo Web exitoso, acompañado de las mejores tecnologías.
 										</p>
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
 											<p className="text-center font-mini footer-content">
-												HTML, CSS, React, Next.js, Node.js, MSSQL, MySQL, Jest, Git, G. Analitycs, Trello
+												HTML, CSS, React, Next.js, Node.js, MSSQL, MySQL, Jest, Git, G. Analitycs.
 											</p>
 										</div>
 									</div>
@@ -146,7 +142,7 @@ const PageIndex = () => {
 							</div>
 							<div className="white-space-32"></div>
 							<div className="card-container row-responsive">
-								<div className="card column wow fadeIn" data-wow-delay="0.1s">
+								<div className="card column wow fadeIn" data-wow-delay="100ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
 											<img src="/img/apps.jpg" alt="Progressive Web Apps" title="Progressive Web Apps" className="holder-image" />
@@ -156,12 +152,12 @@ const PageIndex = () => {
 										<div className="white-space-8"></div>
 										<p className="text-center card-title">
 											<strong>
-												Progressive Web app
+												Progressive Web App
 											</strong>
 										</p>
 										<div className="white-space-8"></div>
 										<p className="text-center font-tiny card-description">
-											Las PWA integran lo mejor de una web y lo mejor de una aplicación móvil nativa, adaptándose por completo al dispositivo el cual se ejecuta.
+											Las PWA combinan lo mejor de una Web y lo mejor de una aplicación móvil nativa, adaptándose al dispositivo el cual se ejecuta y reduciendo tiempos de desarrollo.
 										</p>
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
@@ -171,7 +167,7 @@ const PageIndex = () => {
 										</div>
 									</div>
 								</div>
-								<div className="card column wow fadeIn" data-wow-delay="0.2s">
+								<div className="card column wow fadeIn" data-wow-delay="200ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
 											<img src="/img/cursos.jpg" alt="Cursos y Capacitaciones" title="Cursos y Capacitaciones" className="holder-image" />
@@ -201,6 +197,7 @@ const PageIndex = () => {
 						</div>
 					</div>
 				</div>			                
+				
 				<div className="about justify-center wow fadeIn" id="about">
 					<div className="container row-responsive">
 						<div className="left column">
@@ -218,20 +215,24 @@ const PageIndex = () => {
 						<div className="right column">
 							<div className="white-space-64"></div>
 							<h2 className="color-primary-alt">
-								<span className="color-primary weight-bold">{"{"}</span> Me: Sergio Alejandro Trejo <span className="color-primary weight-bold">}</span>
+								<span className="color-primary weight-bold">{"{ "}</span> 
+								Me: Sergio Alejandro Trejo 
+								<span className="color-primary weight-bold">{" }"}</span>
 							</h2>
 							<div className="white-space-16"></div>
 							<p>
-								<b>Ingeniero en Software y apasionado del desarrollo Web, desde Cancún, México 🏖️</b>
+								<b>Ingeniero en Software, entusiasta del desarrollo Web, desde Cancún, México 🏖️</b>
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								Mi primera formación en técnico en programación, en bachiller, participé en diferentes concursos durante mi preparación siendo el representante estatal en fotografía y ganador en el innovación en el concurso estatal de ciencia y tecnología con mis compañeros.
+								Cursé en la Universidad Politécnica de Quintana Roo la Ingeniería en Software en generación 2015 - 2018, durante mi formación adquirí conocimiento en desarrollo Web, apps móviles, sistemas operativos y desarrollo de Software en general, mi proyecto de titulación:
+								<b>
+									<a href="http://new.upqroo.edu.mx/" rel="noopener" target="_blank"> new.upqroo.com</a>
+								</b>, sitio Web de la Universidad.
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								Cursé en la Universidad Politécnica de Quintana Roo la Ingeniería en Software en la generación 2015 - 2018, durante mi formación adquirí conocimiento en desarrollo Web, apps móviles, sistemas operativos y desarrollo de Software en general, mi proyecto de titulación:
-								<b><a href="http://new.upqroo.edu.mx/" rel="noopener" target="_blank">new.upqroo.com</a></b>, sitio Web de la Universidad.
+								Mi primera formación fue en técnico en programación, en CBTis N° 111, participé en diferentes concursos durante mi preparación siendo el representante estatal en fotografía y ganador en innovación en el concurso estatal de ciencia y tecnología junto con mis compañeros.
 							</p>
 							<div className="white-space-16"></div>
 							<p>
@@ -239,16 +240,22 @@ const PageIndex = () => {
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								- Desarrollador Fullstack Web: 
-								<b><a rel="noopener" target="_blank" href="http://www.dwitmexico.com/"> Dwit México</a></b>
+								- <b>ACTUAL:</b> Desarrollador Web Fullstack: 
+								<b>
+									<a rel="noopener" target="_blank" href="https://www.moonpalacecancun.com/"> Moon Palace</a>
+								</b>
 							</p>
 							<p>
 								- Desarrollador Web: 
-								<b><a rel="noopener" target="_blank" href="https://absolemarketing.com/"> Absolem Marketing</a></b>
+								<b>
+									<a rel="noopener" target="_blank" href="https://absolemarketing.com/"> Absolem Marketing</a>
+								</b>
 							</p>
 							<p>
-								- <b>ACTUAL</b> Desarrollador Fullstack Web: 
-								<b><a rel="noopener" target="_blank" href="https://www.moonpalacecancun.com/"> Moon Palace</a></b>
+								- Desarrollador Fullstack Web: 
+								<b>
+									<a rel="noopener" target="_blank" href="http://www.dwitmexico.com/"> Dwit México</a>
+								</b>
 							</p>
 							<div className="white-space-16"></div>
 							<p>
@@ -260,12 +267,15 @@ const PageIndex = () => {
 							</p>
 							<p>
 								- Desarrollador Web:
-								<b><a rel="noopener" target="_blank" href="https://www.bestlinecancun.com/"> Best Line Cancún</a></b>
+								<b>
+									<a rel="noopener" target="_blank" href="https://www.bestlinecancun.com/"> Best Line Cancún</a>
+								</b>
 							</p>
 							<div className="white-space-64"></div>
 						</div>
 					</div>
 				</div>						
+				
 				<div className="portfolio justify-center" id="projects">
 					<div className="container column">
 						<div className="white-space-64"></div>
@@ -274,7 +284,7 @@ const PageIndex = () => {
 						</h2>
 						<div className="white-space-16"></div>
 						<p className="weight-medium">
-							Esta es una pequeña colección de proyectos profesionales en los que he trabajado a lo largo de mi trayectoria profesional como ingeniero en Software, algunos se encuentran en desarrollo.
+							Aquí una increíble colección de proyectos profesionales y de código abierto en los que he trabajado durante de mi trayectoria profesional como ingeniero en Software, algunos se encuentran aún en desarrollo.
 						</p>
 						<div className="white-space-32"></div>
 						<div className="project-container row-responsive">
@@ -391,6 +401,7 @@ const PageIndex = () => {
 						<div className="white-space-64"></div>
 					</div>
 				</div>						
+				
 				<div className="contact justify-center wow fadeIn" id="contact">
 					<div className="container column">
 						<div className="white-space-64"></div>

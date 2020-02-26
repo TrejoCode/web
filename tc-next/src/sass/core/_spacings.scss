@@ -44,3 +44,15 @@ $paddingHuge:   48px;
 .white-space-64 {
     height: 64px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .white-space-48 {
+        height: 32px;
+    }
+    
+    .white-space-64 {
+        height: 48px;
+    }
+
+}
