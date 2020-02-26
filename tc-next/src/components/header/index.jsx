@@ -21,19 +21,19 @@ const Header = () => {
                 <div className="right full">
                     <nav>
                         <a href="#home" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
-                            INICIO
+                            Inicio
                         </a>
                         <a href="#services" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
-                            SERVICIOS
+                            Servicios
                         </a>
                         <a href="#about" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
-                            CÓNOCEME
+                            Cónoceme
                         </a>
                         <a href="#projects" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
-                            PROYECTOS
+                            Proyectos
                         </a>
                         <a href="#contact" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="300ms">
-                            CONTÁCTAME
+                            Contáctame
                         </a>
                     </nav>
                     <div className="social auto wow fadeInLeft">

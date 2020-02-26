@@ -36,54 +36,54 @@ const PageIndex = () => {
 							</div>
 						</div>
 						<div className="right align-center justify-center">
-							<div className="reponsive-img justify-center align-center wow fadeIn" data-wow-delay="0.3s">
-								<img src="/img/banner-devices.png" alt="Flat devices" title="Flat devices" />
+							<div className="reponsive-img justify-center align-center wow fadeIn" data-wow-delay="300ms">
+								<img src="/img/banner-devices.png" alt="Web and Apps" title="Web and Apps" />
 							</div>
 						</div>
 					</div>
-				</div>                                							
+				</div>
 				<div className="services justify-center wow fadeIn" id="services">
 					<div className="container row-responsive row-responsive-ipad">
 						<div className="left column">
 							<div className="white-space-64"></div>
-							<h2 className="color-darkAqua">
-								<span className="color-aqua weight-bold">{"{"}</span> SERVICIOS
+							<h2 className="color-primary-alt">
+								<span className="color-primary weight-bold">{"{"}</span> SERVICIOS
 							</h2>
 							<div className="white-space-16"></div>
-							<p className="text-justify weight-medium">
-								Concepto claro <b>+</b> diseño atractivo <b>+</b> desarrollo preciso <b>+</b> ultimas tecnologías <b>=</b> ¡Proyectos éxitosos y asombrosos!
+							<p className="text-justify weight-semi">
+								Concepto <b>+</b> diseño atractivo <b>+</b> desarrollo preciso <b>+</b> ultimas tecnologías <b>=</b> ¡Proyectos éxitosos y asombrosos!
 							</p>
 							<div className="white-space-8"></div>
-							<p className="text-justify weight-medium">
+							<p className="text-justify weight-semi">
 								¡Trabajemos juntos! me encanta desarrollar Web, cuénteme su idea y haré todo lo demás.
 							</p>
 							<div className="white-space-8"></div>
 							<p className="weight-medium">
-								<b> Pasa el mouse sobre el servicio para observar un cool efecto </b>
+								<b> Pasa el mouse sobre el servicio para observar un cool efecto ✨</b>
 							</p>
 							<div className="white-space-32"></div>
-							<h3 className="color-darkAqua">
+							<h3 className="color-primary-alt">
 								PROCESO
 							</h3>
 							<div className="white-space-16"></div>
 							<p className="weight-medium">
 								<b>1.- Idea</b>
 							</p>
-							<p>
+							<p className="weight-medium">
 								Escucho tus ideas y juntos encontramos cómo hacerlas realidad.
 							</p>
 							<div className="white-space-16"></div>
 							<p className="weight-medium">
 								<b>2.- Análisis / Desarrollo</b>
 							</p>
-							<p>
+							<p className="weight-medium">
 								Análisis y seguimiento a tu proyecto para darte la mejor solución. Después, iniciará la creación de tu proyecto.
 							</p>
 							<div className="white-space-16"></div>
 							<p className="weight-medium">
-								<b>3.- Testing / Liberación</b>
+								<b>3.- Testing y Liberación</b>
 							</p>
-							<p>
+							<p className="weight-medium">
 								Pruebas funcionales, paso a paso, de usuarios, una vez garantizado el correcto funcionamiento se publicará tu proyecto.
 							</p>
 							<div className="white-space-64"></div>
@@ -138,7 +138,7 @@ const PageIndex = () => {
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
 											<p className="text-center font-mini footer-content">
-												HTML, CSS, JS, PHP, Node.js, React, PostgreSQL, MySQL, Jest, Git, G. Analitycs, Trello
+												HTML, CSS, React, Next.js, Node.js, MSSQL, MySQL, Jest, Git, G. Analitycs, Trello
 											</p>
 										</div>
 									</div>
@@ -166,7 +166,7 @@ const PageIndex = () => {
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
 											<p className="text-center font-mini footer-content">
-												HTML, CSS, JS, React, Jest, Analitycs, Push Notifications
+												HTML, CSS, JS, React, Jest, Lighthouse, Push Notifications
 											</p>
 										</div>
 									</div>
@@ -191,7 +191,7 @@ const PageIndex = () => {
 										<div className="white-space-8"></div>
 										<div className="card-footer column">
 											<p className="text-center font-mini footer-content">
-												HTML, CSS, JS, PHP, React.js, Android, Diseño Web, Diseño Móvil
+												HTML, CSS, JS, React, Next.js, React Native, Diseño Web
 											</p>
 										</div>
 									</div>
@@ -217,8 +217,8 @@ const PageIndex = () => {
 						</div>
 						<div className="right column">
 							<div className="white-space-64"></div>
-							<h2 className="color-darkAqua">
-								<span className="color-aqua weight-bold">{"{"}</span> Me: Sergio Alejandro Trejo <span className="color-aqua weight-bold">}</span>
+							<h2 className="color-primary-alt">
+								<span className="color-primary weight-bold">{"{"}</span> Me: Sergio Alejandro Trejo <span className="color-primary weight-bold">}</span>
 							</h2>
 							<div className="white-space-16"></div>
 							<p>
@@ -226,33 +226,33 @@ const PageIndex = () => {
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								Mi primera formación fue como técnico en programación, en educación bachiller, participé en diferentes concursos durante mi preparación siendo en representante estatal en fotografía y ganador en el innovación en el concurso estatal de ciencia y tecnología con mis compañeros.
+								Mi primera formación en técnico en programación, en bachiller, participé en diferentes concursos durante mi preparación siendo el representante estatal en fotografía y ganador en el innovación en el concurso estatal de ciencia y tecnología con mis compañeros.
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								Cursé en la Universidad Politécnica de Quintana Roo la Ingeniería en Software en la generación 2015 - 2018, durante mi formación adquirí conocimiento en desarrollo Web, aplicaciones móviles, sistemas operativos y desarrollo de Software en general, mi proyecto de titulación:
+								Cursé en la Universidad Politécnica de Quintana Roo la Ingeniería en Software en la generación 2015 - 2018, durante mi formación adquirí conocimiento en desarrollo Web, apps móviles, sistemas operativos y desarrollo de Software en general, mi proyecto de titulación:
 								<b><a href="http://new.upqroo.edu.mx/" rel="noopener" target="_blank">new.upqroo.com</a></b>, sitio Web de la Universidad.
 							</p>
 							<div className="white-space-16"></div>
 							<p>
-								<span className="color-aqua weight-bold">{"{"}</span><b> Empleos </b><span className="color-aqua weight-bold">}</span>
+								<span className="color-primary weight-bold">{"{"}</span><b> Empleos </b><span className="color-primary weight-bold">}</span>
 							</p>
 							<div className="white-space-8"></div>
 							<p>
-								- Gestor Web WordPress: 
-								<b><a rel="noopener" target="_blank" href="http://www.ocho32.com">Ocho32</a></b>
+								- Desarrollador Fullstack Web: 
+								<b><a rel="noopener" target="_blank" href="http://www.dwitmexico.com/"> Dwit México</a></b>
 							</p>
 							<p>
-								- Desarrollador Fullstack Web: 
-								<b><a rel="noopener" target="_blank" href="http://www.dwitmexico.com/">Dwit México</a></b>
+								- Desarrollador Web: 
+								<b><a rel="noopener" target="_blank" href="https://absolemarketing.com/"> Absolem Marketing</a></b>
 							</p>
 							<p>
 								- <b>ACTUAL</b> Desarrollador Fullstack Web: 
-								<b><a rel="noopener" target="_blank" href="https://absolemarketing.com/">Absolem Marketing</a></b>
+								<b><a rel="noopener" target="_blank" href="https://www.moonpalacecancun.com/"> Moon Palace</a></b>
 							</p>
 							<div className="white-space-16"></div>
 							<p>
-								<span className="color-aqua weight-bold">{"{"}</span><b> Freelance </b><span className="color-aqua weight-bold">}</span>
+								<span className="color-primary weight-bold">{"{"}</span><b> Freelance </b><span className="color-primary weight-bold">}</span>
 							</p>
 							<div className="white-space-8"></div>
 							<p>
@@ -260,7 +260,7 @@ const PageIndex = () => {
 							</p>
 							<p>
 								- Desarrollador Web:
-								<b><a rel="noopener" target="_blank" href="https://www.bestlinecancun.com/">Best Line Cancún</a></b>
+								<b><a rel="noopener" target="_blank" href="https://www.bestlinecancun.com/"> Best Line Cancún</a></b>
 							</p>
 							<div className="white-space-64"></div>
 						</div>
@@ -269,8 +269,8 @@ const PageIndex = () => {
 				<div className="portfolio justify-center" id="projects">
 					<div className="container column">
 						<div className="white-space-64"></div>
-						<h2 className="color-darkAqua">
-							<span className="color-aqua weight-bold">{"{"}</span> PROYECTOS
+						<h2 className="color-primary-alt">
+							<span className="color-primary weight-bold">{"{"}</span> PROYECTOS
 						</h2>
 						<div className="white-space-16"></div>
 						<p className="weight-medium">
@@ -278,14 +278,14 @@ const PageIndex = () => {
 						</p>
 						<div className="white-space-32"></div>
 						<div className="project-container row-responsive">
-							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="0.1s" >
+							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" >
 								<div className="image responsive-img justify-center align-center">
 									<img src="/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
 								</div>
 								<div className="white-space-16"></div>
 								<div className="information align-center">
 									<div className="title column">
-										<h2 className="color-darkAqua">
+										<h2 className="color-primary-alt">
 											Best Line Cancún
 										</h2>
 										<a className="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="noopener">
@@ -303,14 +303,14 @@ const PageIndex = () => {
 								</div>
 								<div className="white-space-16"></div>
 							</div>
-							<div className="project project-green column wow fadeInLeft" data-wow-delay="0.2s">
+							<div className="project project-green column wow fadeInLeft" data-wow-delay="200ms">
 								<div className="image responsive-img justify-center align-center">
 									<img src="/img/buenosdias.png" alt="Buenos días México" title="Buenos días México" />
 								</div>
 								<div className="white-space-16"></div>
 								<div className="information align-center">
 									<div className="title column">
-										<h2 className="color-darkAqua">
+										<h2 className="color-primary-alt">
 											Buenos días México
 										</h2>
 										<a className="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="noopener">
@@ -331,14 +331,14 @@ const PageIndex = () => {
 						</div>
 						<div className="white-space-32"></div>
 						<div className="project-container row-responsive">
-							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="0.1s">
+							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms">
 								<div className="image responsive-img justify-center align-center">
 									<img src="/img/delaluz.png" alt="EM-Sistemas" title="EM-Sistemas" />
 								</div>
 								<div className="white-space-16"></div>
 								<div className="information align-center">
 									<div className="title column">
-										<h2 className="color-darkAqua">
+										<h2 className="color-primary-alt">
 											De la Luz
 										</h2>
 										<a className="color-gray font-tiny" href="http://www.delaluz.com.mx/" target="_blank" rel="noopener">
@@ -356,14 +356,14 @@ const PageIndex = () => {
 								</div>
 								<div className="white-space-16"></div>
 							</div>
-							<div className="project project-green column wow fadeInLeft" data-wow-delay="0.2s">
+							<div className="project project-green column wow fadeInLeft" data-wow-delay="200ms">
 								<div className="image responsive-img justify-center align-center">
 									<img src="/img/igate.jpg" alt="OrtoControl" title="OrtoControl" />
 								</div>
 								<div className="white-space-16"></div>
 								<div className="information align-center">
 									<div className="title column">
-										<h2 className="color-darkAqua">
+										<h2 className="color-primary-alt">
 											iGate
 										</h2>
 										<a className="color-gray font-tiny" href="https://igate.mx/" target="_blank" rel="noopener">
@@ -384,7 +384,7 @@ const PageIndex = () => {
 						</div>
 						<div className="white-space-32"></div>
 						<div className="btn-container justify-center">
-							<a href="/portafolio" className="btn btn-large btn-aqua btn-radius color-white weight-bold text-center" id="view-all">
+							<a href="/portafolio" className="btn btn-primary btn-large weight-bold text-center" id="view-all">
 								VER TODOS LOS PROYECTOS
 							</a>
 						</div>
@@ -394,8 +394,8 @@ const PageIndex = () => {
 				<div className="contact justify-center wow fadeIn" id="contact">
 					<div className="container column">
 						<div className="white-space-64"></div>
-						<h2 className="color-darkAqua text-center">
-							<span className="color-aqua weight-bold">{"{"}</span> CONTÁCTAME
+						<h2 className="color-primary-alt text-center">
+							<span className="color-primary weight-bold">{"{"}</span> CONTÁCTAME
 						</h2>
 						<div className="white-space-8"></div>
 						<p className="text-center">
@@ -420,7 +420,7 @@ const PageIndex = () => {
 								</div>
 								<div className="white-space-16"></div>
 								<div className="btn-container justify-center">
-									<button type="submit" className="btn btn-large btn-aqua btn-radius color-white weight-bold">
+									<button type="submit" className="btn btn-large btn-primary color-white weight-bold">
 										ENVIAR
 									</button>
 								</div>

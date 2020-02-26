@@ -21,19 +21,19 @@
     }
 
     .services {
-        background-color: $lightAqua;
         min-height: 600px;
+        background-color: $lightBg;
     }
 
     .services .left {
-        width: 40%;
         top: 0;
+        width: 40%;
+        position: sticky;  
         align-self: flex-start;
-        position: sticky;        
         margin-right: $paddingLarge;
         p {
             padding: 0 $paddingNormal;
-            b { color: $darkAqua; }
+            b { color: $primary-alt; }
         }
     }
 
@@ -45,14 +45,15 @@
     .services .card {
         width: 50%;
         background-color: $white;
-        box-shadow: 2px 4px 2px #e9e9e9;        
+        box-shadow: 2px 4px 2px #e9e9e9;
+        transition: all 250ms ease-in-out;
         &:first-of-type { margin-right: $paddingNormal; }
         &:last-of-type { margin-left: $paddingNormal; }
         &:hover { box-shadow: 0px 4px 3px rgba(37, 131, 149, 0.3); }
     }
 
     .services .card-head {
-        background-color: $aqua;
+        background-color: $primary;
         border-radius: 4px 4px 0 0;
     }    
 
@@ -74,7 +75,7 @@
 
         .card-footer {
             height: 70px;
-            border-top: 2px solid $lightAqua;
+            border-top: 2px solid $lightBg;
         }
 
         .footer-content {
@@ -106,7 +107,7 @@
     }
 
     .portfolio {
-        background-color: $lightAqua;
+        background-color: $lightBg;
     }
 
     .portfolio .project-container {
