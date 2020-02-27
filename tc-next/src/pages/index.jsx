@@ -6,9 +6,10 @@
 
 import React from 'react';
 import Layout from '../components/layout';
+import projects from '../../public/data/projects';
 
 const PageIndex = () => {
-	
+
 	return(	
 		<Layout>
 			<div className="home column" id="home">
@@ -287,110 +288,33 @@ const PageIndex = () => {
 							Aquí una increíble colección de proyectos profesionales y de código abierto en los que he trabajado durante de mi trayectoria profesional como ingeniero en Software, algunos se encuentran aún en desarrollo.
 						</p>
 						<div className="white-space-32"></div>
-						<div className="project-container row-responsive">
-							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" >
-								<div className="image responsive-img justify-center align-center">
-									<img src="/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
-								</div>
-								<div className="white-space-16"></div>
-								<div className="information align-center">
-									<div className="title column">
-										<h2 className="color-primary-alt">
-											Best Line Cancún
-										</h2>
-										<a className="color-gray font-tiny" href="https://www.bestlinecancun.com/" target="_blank" rel="noopener">
-											www.bestlinecancun.com
-										</a>
+						<div className="project-container wrap">
+							{ projects.web.map((project, key) => key < 6 &&
+								<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
+									<div className="image responsive-img justify-center align-center">
+										<img src="/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
 									</div>
-									<div className="description full column">
-										<h5 className="color-gray">
-											Diseño Web
-										</h5>
-										<h5 className="color-gray">
-											Desarrollo Web
-										</h5>
+									<div className="white-space-16"></div>
+									<div className="information align-center">
+										<div className="title column">
+											<h2 className="color-primary-alt">
+												{ project.name }
+											</h2>
+											<a className="color-gray font-tiny" href= { project.url } target="_blank" rel="noopener">
+												{ project.slug }
+											</a>
+										</div>
+										<div className="description full column">
+											{ project.services.map((service, index) =>
+												<h5 className="color-gray" key = { index }>
+													{ service }
+												</h5>
+											)}
+										</div>
 									</div>
+									<div className="white-space-16"></div>
 								</div>
-								<div className="white-space-16"></div>
-							</div>
-							<div className="project project-green column wow fadeInLeft" data-wow-delay="200ms">
-								<div className="image responsive-img justify-center align-center">
-									<img src="/img/buenosdias.png" alt="Buenos días México" title="Buenos días México" />
-								</div>
-								<div className="white-space-16"></div>
-								<div className="information align-center">
-									<div className="title column">
-										<h2 className="color-primary-alt">
-											Buenos días México
-										</h2>
-										<a className="color-gray font-tiny" href="https://buenosdiasmexico.mx/" target="_blank" rel="noopener">
-											www.buenosdiasmexico.mx
-										</a>
-									</div>
-									<div className="description full column">
-										<h5 className="color-gray">
-											Responsive Web
-										</h5>
-										<h5 className="color-gray">
-											Desarrollo Web
-										</h5>
-									</div>
-								</div>
-								<div className="white-space-16"></div>
-							</div>
-						</div>
-						<div className="white-space-32"></div>
-						<div className="project-container row-responsive">
-							<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms">
-								<div className="image responsive-img justify-center align-center">
-									<img src="/img/delaluz.png" alt="EM-Sistemas" title="EM-Sistemas" />
-								</div>
-								<div className="white-space-16"></div>
-								<div className="information align-center">
-									<div className="title column">
-										<h2 className="color-primary-alt">
-											De la Luz
-										</h2>
-										<a className="color-gray font-tiny" href="http://www.delaluz.com.mx/" target="_blank" rel="noopener">
-											www.delaluz.com.mx
-										</a>
-									</div>
-									<div className="description full column">
-										<h5 className="color-gray">
-											Diseño Web
-										</h5>
-										<h5 className="color-gray">
-											Desarrollo Web
-										</h5>
-									</div>
-								</div>
-								<div className="white-space-16"></div>
-							</div>
-							<div className="project project-green column wow fadeInLeft" data-wow-delay="200ms">
-								<div className="image responsive-img justify-center align-center">
-									<img src="/img/igate.jpg" alt="OrtoControl" title="OrtoControl" />
-								</div>
-								<div className="white-space-16"></div>
-								<div className="information align-center">
-									<div className="title column">
-										<h2 className="color-primary-alt">
-											iGate
-										</h2>
-										<a className="color-gray font-tiny" href="https://igate.mx/" target="_blank" rel="noopener">
-											www.igate.mx
-										</a>
-									</div>
-									<div className="description full column">
-										<h5 className="color-gray">
-											App Android, IOS
-										</h5>
-										<h5 className="color-gray">
-											Web API
-										</h5>
-									</div>
-								</div>
-								<div className="white-space-16"></div>
-							</div>
+							)}
 						</div>
 						<div className="white-space-32"></div>
 						<div className="btn-container justify-center">

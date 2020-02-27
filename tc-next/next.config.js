@@ -4,5 +4,8 @@
  * @description Next.js config for SASS and PWA
 */
 
-const withSass      = require('@zeit/next-sass');
-module.exports      = withSass({});
+const withPlugins   = require('next-compose-plugins');
+const PWA           = require('next-pwa');
+const sass          = require('@zeit/next-sass');
+
+module.exports      = withPlugins([PWA, sass]);

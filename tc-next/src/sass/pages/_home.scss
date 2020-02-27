@@ -113,40 +113,35 @@
 
     .portfolio {
         background-color: $lightBg;
-    }
 
-    .portfolio .project-container {
-        justify-content: space-between;
-    }
+        .project-container {
+            justify-content: space-between;
+        }
 
-    .portfolio .project {
-        width: 46%;
-        &:first-of-type { padding-left: $paddingNormal; }
-        &:last-of-type { padding-right: $paddingNormal; }
-    }
+        .project {
+            width: 31%;
+            border-radius: 4px;
+            padding: $paddingNormal;
+            background-color: $white;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            margin: $marginMedium $marginNormal;
 
-    .portfolio .image {
-        height: 350px;
-         img { height: 260px; }
+            .image {
+                height: 200px;
+            }
+
+            .title { min-width: 60%; }
+
+            .description {
+                justify-content: flex-end;
+                h5 { text-align: right; }
+            }
+
+        }
+
     }
     
-    .portfolio .project-aqua .image {
-        background-color: $darkAqua;
-    }
-
-    .portfolio .project-green .image {
-        background-color: #4e8540;
-    }
-
-    .portfolio .title {
-        min-width: 60%;
-        
-    }
-
-    .portfolio .description {
-        justify-content: flex-end;
-        h5 { text-align: right; }
-    }    
+       
 
     .contact form {
         width: 60%;
@@ -282,15 +277,18 @@
         }
         
 
-        .portfolio .project-container {
-            justify-content: space-between;
+        .portfolio {
+
+            .project-container {
+                justify-content: space-between;
+            }
+
+            .project {
+                width: 30%;
+            }
+
         }
 
-        .portfolio .project {
-            width: 100%;
-            &:first-of-type { padding-left: 0; }
-            &:last-of-type { padding-right: 0; }
-        }
 
         .portfolio .image {
             width: 100%;
