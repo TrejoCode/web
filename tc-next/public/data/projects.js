@@ -1,5 +1,5 @@
 const projects = {
-    projects: [            
+    web: [
         {
             name: "Best Line Cancún",
             slug: "www.bestlinecancun.com",
@@ -81,6 +81,68 @@ const projects = {
             ]
         },
         {
+            name: "BéCé Online",
+            slug: "www.beceonline.com",
+            url: "https://www.beceonline.com",
+            img: "/img/bece.png",
+            services: [                
+                "Desarrollo Web",
+                "Diseño Web",
+            ]
+        },
+        {
+            name: "Chicle y Pega",
+            slug: "www.chicleypegacreativo.com",
+            url: "https://www.chicleypegacreativo.com",
+            img: "/img/chicle-y-pega.png",
+            services: [          
+                "Diseño Web",      
+                "Desarrollo Web"
+            ]
+        },
+        {
+            name: "Universidad Politécnica de Quinana Roo",
+            slug: "new.upqroo.edu.mx",
+            url: "http://new.upqroo.edu.mx",
+            img: "/img/upqroo.png",
+            services: [          
+                "Diseño Web",      
+                "Desarrollo Web"
+            ]
+        },
+        {
+            name: "EM-Sistemas",
+            slug: "www.em-sistemas.net",
+            url: "https://www.em-sistemas.net/",
+            img: "/img/em-sistemas.png",
+            services: [          
+                "Diseño Web",      
+                "Responsive Web"
+            ]
+        },
+        {
+            name: "California Fitness",
+            slug: "www.californiafitness.com.mx",
+            url: "http://www.californiafitness.com.mx",
+            img: "/img/california-fitness.png",
+            services: [          
+                "Diseño Web",      
+                "Responsive Web"
+            ]
+        },
+        {
+            name: "Go Workers",
+            slug: "www.goworkers.es",
+            url: "https://www.goworkers.es",
+            img: "/img/go-workers.png",
+            services: [          
+                "Responsive Web",
+                "Desarrollo PWA",
+            ]
+        },
+    ],
+    apps: [
+        {
             name: "iGate",
             slug: "www.igate.mx",
             url: "https://play.google.com/store/apps/details?id=com.mobile.igate",
@@ -91,13 +153,75 @@ const projects = {
             ]
         },
         {
-            name: "BéCé Online",
-            slug: "www.beceonline.com",
-            url: "https://www.beceonline.com",
-            img: "/img/bece.png",
-            services: [                
-                "Desarrollo Web",
-                "Diseño Web",
+            name: "Inspecciones APP",
+            slug: "App Privada",
+            url: "",
+            img: "/img/inspecciones.png",
+            services: [
+                "App móvil",
+                "Web API"
+            ]
+        },
+    ],
+    wp: [
+        {
+            name: "Sergio Orduña",
+            slug: "www.soarch.mx",
+            url: "http://www.soarch.mx",
+            img: "/img/soarch.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "Eat Copper Branch",
+            slug: "www.eatcopperbranch.com",
+            url: "https://eatcopperbranch.com",
+            img: "/img/eatcopper.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "Balcón del zócalo",
+            slug: "www.balcondelzocalo.com",
+            url: "https://www.balcondelzocalo.com",
+            img: "/img/balcon-zocallo.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "Dolcezzza",
+            slug: "www.dolcezza.ca",
+            url: "https://dolcezza.ca",
+            img: "/img/dolcezza.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "Luxe Transportation",
+            slug: "www.luxe-transportation.com",
+            url: "https://luxe-transportation.com/es",
+            img: "/img/luxe.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "Fidelis Marketing Group",
+            slug: "www.fidelismarketinggroup.com",
+            url: "https://www.fidelismarketinggroup.com",
+            img: "/img/fidelis-marketing.png",
+            services: [
+                "Administración Web",
+                "Diseño Web"
             ]
         },
     ]
