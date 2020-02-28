@@ -110,7 +110,6 @@
 
     }
 
-
     .portfolio {
         background-color: $lightBg;
 
@@ -127,21 +126,23 @@
             margin: $marginMedium $marginNormal;
 
             .image {
-                height: 200px;
+                img {
+                    max-height: 180px;
+                }
             }
 
-            .title { min-width: 60%; }
+            .web {
+                margin-bottom: $marginSemi;
+            }
 
             .description {
-                justify-content: flex-end;
-                h5 { text-align: right; }
+                justify-content: space-around;
             }
 
         }
 
     }
     
-       
 
     .contact form {
         width: 60%;
@@ -161,8 +162,8 @@
 
 }
 
-@media screen and (max-width: 992px) {
-    
+@media screen and (max-width: 1024px) {
+
     .home {
 
         .banner {
@@ -206,6 +207,23 @@
                 p { padding: 0; }   
             }
 
+        }
+
+        .portfolio {
+            background-color: $lightBg;
+    
+            .project-container {
+                justify-content: space-between;
+            }
+    
+            .project {
+
+                .title { 
+                    a { font-size: 1.4rem; }
+                }
+    
+            }
+    
         }
         
     }
@@ -275,35 +293,11 @@
             }
 
         }
-        
 
         .portfolio {
-
-            .project-container {
-                justify-content: space-between;
-            }
-
-            .project {
-                width: 30%;
-            }
-
+            .project { width: 45%; }
         }
-
-
-        .portfolio .image {
-            width: 100%;
-            height: auto;
-            img { width: 80%; height: auto; }
-        }        
         
-        .portfolio .title {
-            min-width: 50%;            
-        }
-
-        .portfolio .description {
-            justify-content: flex-end;
-            h5 { text-align: right; }
-        }
         
         .contact form {
             width: 100%;
@@ -342,6 +336,24 @@
         .about {
             .right {
                 h2 { font-size: 1.5rem; }
+            }
+        }
+
+        
+        .portfolio {
+            .project {
+                width: 100%;
+    
+                .image {
+                    img {
+                        max-height: 140px;
+                    }
+                }
+    
+                .title { 
+                    a { font-size: 1.25rem; }
+                }
+    
             }
         }
 

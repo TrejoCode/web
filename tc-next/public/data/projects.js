@@ -1,36 +1,6 @@
 const projects = {
     web: [
         {
-            name: "Best Line Cancún",
-            slug: "www.bestlinecancun.com",
-            url: "https://www.bestlinecancun.com",
-            img: "/img/bestlinecancun.png",
-            services: [
-                "Diseño Web",
-                "Desarrollo Web"
-            ]
-        },
-        {
-            name: "Core.css",
-            slug: "github.com/TrejoCode/css",
-            url: "https://github.com/TrejoCode/css",
-            img: "/img/corecss.png",
-            services: [
-                "Open Source",
-                "Diseño Web"
-            ]
-        },
-        {
-            name: "CRM Altura",
-            slug: "crm.alturacancun.com",
-            url: "https://crm.alturacancun.com",
-            img: "/img/alturacancun.png",
-            services: [
-                "Desarrollo Web",
-                "Desarrollo PWA"
-            ]
-        },
-        {
             name: "React Boilerplate",
             slug: "github.com/TrejoCode/react-boilerplate",
             url: "https://github.com/TrejoCode/react-boilerplate",
@@ -44,7 +14,7 @@ const projects = {
             name: "Absolem Marketing",
             slug: "www.absolemarketing.com.mx",
             url: "https://absolemarketing.com.mx",
-            img: "/img/absolem.png",
+            img: "/img/absolem-marketing.png",
             services: [
                 "Desarrollo Web",
                 "Diseño Web"
@@ -58,6 +28,36 @@ const projects = {
             services: [
                 "Diseño Web",
                 "Desarrollo Web"
+            ]
+        },
+        {
+            name: "Best Line Cancún",
+            slug: "www.bestlinecancun.com",
+            url: "https://www.bestlinecancun.com",
+            img: "/img/bestline-cancun.png",
+            services: [
+                "Diseño Web",
+                "Desarrollo Web"
+            ]
+        },
+        {
+            name: "Core.css",
+            slug: "github.com/TrejoCode/css",
+            url: "https://github.com/TrejoCode/css",
+            img: "/img/core-css.png",
+            services: [
+                "Open Source",
+                "Diseño Web"
+            ]
+        },
+        {
+            name: "CRM Altura",
+            slug: "crm.alturacancun.com",
+            url: "https://crm.alturacancun.com",
+            img: "/img/altura-cancun.png",
+            services: [
+                "Desarrollo Web",
+                "Desarrollo PWA"
             ]
         },
         {
@@ -84,7 +84,7 @@ const projects = {
             name: "BéCé Online",
             slug: "www.beceonline.com",
             url: "https://www.beceonline.com",
-            img: "/img/bece.png",
+            img: "/img/bece-online.png",
             services: [                
                 "Desarrollo Web",
                 "Diseño Web",
@@ -136,7 +136,17 @@ const projects = {
             url: "https://www.goworkers.es",
             img: "/img/go-workers.png",
             services: [          
-                "Responsive Web",
+                "Desarrollo Web",
+                "Desarrollo PWA",
+            ]
+        },
+        {
+            name: "Waala Influencers",
+            slug: "www.waalainfluencers.com",
+            url: "https://www.waalainfluencers.com",
+            img: "/img/waala.png",
+            services: [          
+                "Desarrollo Web",
                 "Desarrollo PWA",
             ]
         },
@@ -178,7 +188,7 @@ const projects = {
             name: "Eat Copper Branch",
             slug: "www.eatcopperbranch.com",
             url: "https://eatcopperbranch.com",
-            img: "/img/eatcopper.png",
+            img: "/img/eat-copper-branch.png",
             services: [
                 "Administración Web",
                 "Diseño Web"
@@ -188,7 +198,7 @@ const projects = {
             name: "Balcón del zócalo",
             slug: "www.balcondelzocalo.com",
             url: "https://www.balcondelzocalo.com",
-            img: "/img/balcon-zocallo.png",
+            img: "/img/balcon-del-zocalo.png",
             services: [
                 "Administración Web",
                 "Diseño Web"
@@ -208,7 +218,7 @@ const projects = {
             name: "Luxe Transportation",
             slug: "www.luxe-transportation.com",
             url: "https://luxe-transportation.com/es",
-            img: "/img/luxe.png",
+            img: "/img/luxe-transportation.png",
             services: [
                 "Administración Web",
                 "Diseño Web"

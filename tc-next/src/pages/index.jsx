@@ -288,25 +288,24 @@ const PageIndex = () => {
 							Aquí una increíble colección de proyectos profesionales y de código abierto en los que he trabajado durante de mi trayectoria profesional como ingeniero en Software, algunos se encuentran aún en desarrollo.
 						</p>
 						<div className="white-space-32"></div>
-						<div className="project-container wrap">
-							{ projects.web.map((project, key) => key < 6 &&
+						<div className="project-container wrap"> 
+							{ projects.web.map((project, key) => key < 9 &&
 								<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
 									<div className="image responsive-img justify-center align-center">
-										<img src="/img/bestlinecancun.png" alt="Best Line Cancún" title="Best Line Cancún" />
+										<img src = { project.img } alt = { project.title } title = { project.title } />
 									</div>
 									<div className="white-space-16"></div>
-									<div className="information align-center">
-										<div className="title column">
-											<h2 className="color-primary-alt">
-												{ project.name }
-											</h2>
-											<a className="color-gray font-tiny" href= { project.url } target="_blank" rel="noopener">
-												{ project.slug }
-											</a>
+									<div className="information column align-center">
+										<div className="title full column">
+											<div className="web full justify-center">
+												<a className="color-primary-alt text-center font-large weight-semi" href= { project.url } target="_blank" rel="noopener">
+													{ project.name }
+												</a>
+											</div>
 										</div>
-										<div className="description full column">
+										<div className="description full">
 											{ project.services.map((service, index) =>
-												<h5 className="color-gray" key = { index }>
+												<h5 className="color-gray font-tiny" key = { index }>
 													{ service }
 												</h5>
 											)}
