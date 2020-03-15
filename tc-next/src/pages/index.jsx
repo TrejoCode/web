@@ -2,6 +2,7 @@
  * @version 1.0.0
  * @author Sergio - Trejocode
  * @description Página /index
+ * TODO: Social Icons Mobile, Email sending.
 */
 
 import React from 'react';
@@ -289,7 +290,7 @@ const PageIndex = () => {
 						</p>
 						<div className="white-space-32"></div>
 						<div className="project-container wrap"> 
-							{ projects.web.map((project, key) => key < 9 &&
+							{ projects[0].projects.map((project, key) => key < 9 &&
 								<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
 									<div className="image responsive-img justify-center align-center">
 										<img src = { project.img } alt = { project.title } title = { project.title } />

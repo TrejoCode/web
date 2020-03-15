@@ -1,132 +1,90 @@
 
 
-.full-portfolio {
+.page-portafolio {
+
     background-color: $lightBg;
 
-
-    .project-container {
-        justify-content: space-between;
-    }
-
-    .project {
-        width: 46%;
-        &:first-of-type { padding-left: $paddingNormal; }
-        &:last-of-type { padding-right: $paddingNormal; }
-    }
-
-    .image {
-        height: 350px;
-        img { height: 240px; }
-    }    
-
-    #california img { height: 140px; }
-
-    #upqroo img { height: 160px; }
-
-    #elfos img { height: 200px; }
-
-    #pardi img { height: 140px; }
-
-    #soarch img { height: 100px; }
-
-    #eat img { height: 200px; }
-
-    #balcon img { height: 40px; }
-    
-    .blue-card .image {
-        background-color: $darkAqua;
-    }
-
-    .green-card .image {
-        background-color: #4e8540;
-    }
-
-    .title {
-        min-width: 60%;
-    }
-
-    .description {
-        justify-content: flex-end;
-        h5 { text-align: right; }
-    }
-}
-
-.portfolio-contact {
-
-    .contact {
-        background-color: $white;
-    }
-
-    form {
-        width: 60%;
-    }
-
-    form input {
-        min-width: 48%;
-    }
-
-    form a {
-        color: $gray;
-    }
-
-    form .btn {
-        width: 35%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .full-portfolio {
+    .portfolio {
+        background-color: $lightBg;
 
         .project-container {
             justify-content: space-between;
         }
 
         .project {
-            width: 100%;
-            &:first-of-type { padding-left: 0; }
-            &:last-of-type { padding-right: 0; }
+            width: 31%;
+            border-radius: 4px;
+            padding: $paddingNormal;
+            background-color: $white;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            margin: $marginMedium $marginNormal;
+
+            .image {
+                img {
+                    max-height: 180px;
+                }
+            }
+
+            .web {
+                margin-bottom: $marginSemi;
+            }
+
+            .description {
+                justify-content: space-around;
+            }
+
         }
 
-        .image {
-            width: 100%;
-            height: auto;
-            min-height: 400px;
-            img { width: 80%; height: auto; margin: $paddingNormal 0;}
-        }
+    }
 
-        #california img, #upqroo img, #california img, #upqroo img, #elfos img, #pardi img,
-        #soarch img, #eat img, #balcon img { height: auto; }
+    @media screen and (max-width: 1024px) {
+
+        .portfolio {
+            background-color: $lightBg;
+    
+            .project-container {
+                justify-content: space-between;
+            }
+    
+            .project {
+    
+                .title { 
+                    a { font-size: 1.4rem; }
+                }
+    
+            }
+    
+        }
         
-        .title {
-            min-width: 50%;            
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .portfolio {
+            .project { width: 45%; }
         }
-
-        .description {
-            justify-content: flex-end;
-            h5 { text-align: right; }
-        }   
+        
+    }
+    
+    @media screen and (max-width: 576px) {
+    
+        .portfolio {
+            .project {
+                width: 100%;
+    
+                .image {
+                    img {
+                        max-height: 140px;
+                    }
+                }
+    
+                .title { 
+                    a { font-size: 1.25rem; }
+                }
+    
+            }
+        }
+        
     }
 
-    .portfolio-contact {
-
-        form {
-            width: 100%;
-        }
-
-        form input {
-            min-width: 45%;
-            margin: 0 4px;
-        }
-
-         form a {
-            text-align: center;
-        }
-
-        form .btn {
-            width: 80%;
-        }
-
-    }
 }
