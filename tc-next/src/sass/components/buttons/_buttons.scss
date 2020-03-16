@@ -31,3 +31,8 @@ button, .btn {
 .btn-secondary {
     background-color: $secondary;
 }
+
+.btn-large {
+    font-size: $fontSmall;
+    padding: $paddingMedium $paddingSemi;
+}

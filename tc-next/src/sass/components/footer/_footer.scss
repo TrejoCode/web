@@ -1,7 +1,37 @@
 
 footer {
+
     .footer-top {
-        background-color: $darkAqua;
+
+        background-color: $primary-alt;
+
         img { max-height: 50px; }
+
+        .top-page { display: none; }
+
     }
+
+
+    @media screen and (max-width: 576px) {
+        
+        .footer-top {
+
+            .top-page {
+
+                display: flex;
+    
+                a {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 4px;
+                    background-color: $white;
+                    margin-bottom: $marginSemi;
+                }
+    
+            }
+
+        }
+
+    }
+
 }

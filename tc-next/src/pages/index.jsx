@@ -2,18 +2,48 @@
  * @version 1.0.0
  * @author Sergio - Trejocode
  * @description Página /index
- * TODO: Social Icons Mobile, Email sending.
+ * TODO: PWA, Cloudinary, Analitycs
 */
 
-import React from 'react';
-import Layout from '../components/layout';
-import projects from '../../public/data/projects';
+import React, { useState } 	from 'react';
+import Layout 				from '../components/layout';
+import projects 			from '../../public/data/projects';
+import cogoToast 			from 'cogo-toast';
+import ReCAPTCHA 			from "react-google-recaptcha";
+import Request 				from '../utils/http';
 
 const PageIndex = () => {
 
+	const [captcha, setCaptcha] = useState(null);
+
+	const handleSubmit = async (event) => {
+		event.preventDefault();
+		if (captcha) {
+			const form = event.target;
+			const data = {
+				name: 		form.name.value,
+				email:		form.email.value,
+				message:	form.message.value
+			};
+			const request = new Request();
+			const { result, error } = await request.post('/contact/single', data);
+			if (result && result.replied) {
+				cogoToast.success('Mensaje enviado');
+			} else {
+				cogoToast.error(error.message);
+			}
+		} else {
+			cogoToast.error("¡Oh no! Verifica que no seas un robot");
+		}
+	};
+
+	const onchangeCaptcha = (token) => {
+		setCaptcha(token);
+	};
+
 	return(	
 		<Layout>
-			<div className="home column" id="home">
+			<div className="home column">
 				<div className="banner justify-center wow fadeIn" data-wow-delay="200ms">
 					<div className="container row-responsive">
 						<div className="left column">
@@ -338,7 +368,7 @@ const PageIndex = () => {
 						</p>
 						<div className="white-space-32"></div>
 						<div className="justify-center align-center">
-							<form method="POST" action="/php/email.php" className="column">
+							<form method="POST" className="column" onSubmit = { handleSubmit }>
 								<div className="row justify-between">
 									<input type="text" name="name" minLength="6" maxLength="60" className="input input-radius" placeholder="Nombre" required />
 									<input type="email" name="email" minLength="8" maxLength="100" className="input input-radius" placeholder="Correo electrónico" required />
@@ -354,6 +384,10 @@ const PageIndex = () => {
 									</a>
 								</div>
 								<div className="white-space-16"></div>
+								<div className="justify-center align-center">
+									<ReCAPTCHA sitekey = "6Le8vuEUAAAAAJITvX1KmJpYQrc4fyP8rlP5cNEq" size = "normal" onChange = { onchangeCaptcha } />
+								</div>
+								<div className="white-space-16"></div>
 								<div className="btn-container justify-center">
 									<button type="submit" className="btn btn-large btn-primary color-white weight-bold">
 										ENVIAR
@@ -367,5 +401,6 @@ const PageIndex = () => {
 			</div>
 		</Layout>
 	);
-}
+};
+
 export default PageIndex;

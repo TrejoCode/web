@@ -181,17 +181,35 @@
         }
 
         .services {
+
             .row-responsive-ipad { flex-direction: column; }
 
             .left {
                 width: 100%;
                 position: relative;
+                margin-bottom: 3rem;
             }
 
             .right {
                 width: 100%;
                 margin-bottom: $paddingLarge;
             }
+
+            .card-head {
+
+                .responsive-img { width: 100%; }
+
+                background-color: $primary;
+                border-radius: 4px 4px 0 0;
+    
+                img { 
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+    
+            }
+
         }
 
         .about {
@@ -200,6 +218,7 @@
                     width: 85%;
                     height: auto;
                     padding-right: 0;
+                    object-fit: cover;
                 }
             }
 
@@ -235,6 +254,9 @@
     .home {
 
         .banner {
+
+            min-height: 600px;
+
             .left {
                 margin: $paddingLarge 0;
                 width: 100%;
@@ -249,20 +271,27 @@
         
 
         .services {
+
             padding-bottom: 0;
+
             .left { 
                 margin-right: 0; 
                 p { padding: 0; }
             }
             
             .right { 
-                margin-left: 0; 
-                padding-top: 2rem;
+                margin-left: 0;
+
+                .card-container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
             }
 
             .card {
-                width: 100%;
-                margin: $paddingMedium 0;
+                width: calc(50% - 1rem);
+                margin: 0;
                 &:first-of-type { margin-right: 0; }
                 &:last-of-type { margin-left: 0; }
             }
@@ -322,7 +351,6 @@
 @media screen and (max-width: 576px) {
 
     .home {
-
         .banner {
             .left {
                 h3 {
@@ -332,6 +360,39 @@
                 br { display: none; }
             }
         }
+
+
+        .services {
+
+            padding-bottom: 0;
+
+            .left { 
+                margin-right: 0; 
+                p { padding: 0; }
+            }
+            
+            .right { 
+                margin-left: 0;
+
+                .card-container { flex-direction: column; }
+
+                .white-space-32 { height: 8px; }
+
+            }
+
+            .card {
+                width: 100%;
+                margin: $marginNormal 0;
+            }
+
+            
+
+            .card-head {
+                img { width: 100%; }
+            }
+
+        }
+
 
         .about {
             .right {

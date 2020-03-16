@@ -4,12 +4,12 @@
  * @description Componente del <Header />
 */
 
-import React from 'react';
+import React, { memo } from 'react';
 import { AiFillLinkedin, AiFillFacebook, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 
 const Header = () => {
     return(
-        <header className="justify-center">
+        <header className="justify-center" id = "header">
             <div className="container">
                 <div className="left row align-center auto">
                     <div className="logo">
@@ -20,19 +20,19 @@ const Header = () => {
                 </div>
                 <div className="right full">
                     <nav>
-                        <a href="#home" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
+                        <a href="/#home" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
                             Inicio
                         </a>
-                        <a href="#services" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
+                        <a href="/#services" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="200ms">
                             Servicios
                         </a>
-                        <a href="#about" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
+                        <a href="/#about" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
                             Cónoceme
                         </a>
-                        <a href="#projects" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
+                        <a href="/portafolio" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="250ms">
                             Proyectos
                         </a>
-                        <a href="#contact" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="300ms">
+                        <a href="/#contact" className="color-secondary weight-semi wow fadeInLeft" data-wow-delay="300ms">
                             Contáctame
                         </a>
                     </nav>
@@ -60,4 +60,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default memo(Header);

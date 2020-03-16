@@ -1,7 +1,7 @@
 /**
  * @version 1.0.0
  * @author Sergio - Trejocode
- * @description Página /index
+ * @description Página /portafolio
 */
 
 import React from 'react';
