@@ -9,7 +9,7 @@
 import request from "superagent";
 
 // Web API URL
-const baseUrl = 'http://localhost:8081';
+const baseUrl = 'https://trejocode-api.herokuapp.com';
 
 class Request {
 
