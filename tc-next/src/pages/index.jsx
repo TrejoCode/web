@@ -2,10 +2,10 @@
  * @version 1.0.0
  * @author Sergio - Trejocode
  * @description Página /index
- * TODO: PWA, Cloudinary, Analitycs
 */
 
 import React, { useState } 	from 'react';
+import Link 				from 'next/link';
 import Layout 				from '../components/layout';
 import projects 			from '../../public/data/projects';
 import cogoToast 			from 'cogo-toast';
@@ -26,7 +26,7 @@ const PageIndex = () => {
 				message:	form.message.value
 			};
 			const request = new Request();
-			const { result, error } = await request.post('/contact/single', data);
+			const { result, error } = await request.post('/email/contact/single', data);
 			if (result && result.replied) {
 				cogoToast.success('Mensaje enviado');
 			} else {
@@ -348,9 +348,11 @@ const PageIndex = () => {
 						</div>
 						<div className="white-space-32"></div>
 						<div className="btn-container justify-center">
-							<a href="/portafolio" className="btn btn-primary btn-large weight-bold text-center" id="view-all">
-								VER TODOS LOS PROYECTOS
-							</a>
+							<Link href="/portafolio">
+								<a className="btn btn-primary btn-large weight-bold text-center" id="view-all">
+									VER TODOS LOS PROYECTOS
+								</a>
+							</Link>
 						</div>
 						<div className="white-space-64"></div>
 					</div>

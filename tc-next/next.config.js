@@ -8,4 +8,4 @@ const withPlugins   = require('next-compose-plugins');
 const PWA           = require('next-pwa');
 const sass          = require('@zeit/next-sass');
 
-module.exports      = withPlugins([PWA, sass]);
+module.exports      = withPlugins([[PWA, { pwa: { dest: 'public' } }], sass]);
