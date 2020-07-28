@@ -1,12 +1,12 @@
 /**
  * @version 1.0.0
- * @author Sergio - Trejocode
- * @description Página de error
+ * @author Trejocode - Sergio
+ * @description Página de error 404
 */
 
-import React from 'react';
-import Link from 'next/link';
-import Layout from '../components/layout';
+import React    from 'react';
+import Link     from 'next/link';
+import Layout   from '../components/layout';
 
 const ErrorPage = () => {
 

@@ -12,10 +12,6 @@ import Footer   from '../components/footer';
 import NProgress    from 'nprogress';
 import * as gtag    from '../utils/gtag';
 
-// Hoja de estilos
-import '../sass/style.scss';
-
-
 /**
  * Escuchar los eventos del Router para controlar el Loader
 */

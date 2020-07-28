@@ -6,7 +6,7 @@
  *  @param: {Object} data: Payload
 */
 
-import request from "superagent";
+import request from "axios";
 
 // Web API URL
 const baseUrl = 'https://trejocode-api.herokuapp.com';
