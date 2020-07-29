@@ -3,8 +3,9 @@
  * @author Trejocode - Sergio
  * @description Plantilla HTML inicial
 */
+
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { GA_TRACKING_ID } from '../utils/gtag';
+import { GA_TRACKING_ID } from '../helpers/ga';
 
 class DocumentHTML extends Document {
 
@@ -15,7 +16,7 @@ class DocumentHTML extends Document {
 
 	render() {
 		return (
-			<Html lang="es">
+			<Html lang="es-MX">
 				<Head />
 				<body>
 					<Main />

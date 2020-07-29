@@ -104,8 +104,8 @@ const projects = [
 			},
 			{
 				name: 'Universidad Politécnica de Quinana Roo',
-				slug: 'new.upqroo.edu.mx',
-				url: 'http://new.upqroo.edu.mx',
+				slug: 'www.upqroo.edu.mx',
+				url: 'http://www.upqroo.edu.mx',
 				img: '/img/upqroo.png',
 				services: [
 					'Diseño Web',
@@ -154,31 +154,6 @@ const projects = [
 			}
 		]
 	},
-	// {
-	// 	title: 'Apps',
-	// 	projects: [
-	// 		{
-	// 			name: 'iGate',
-	// 			slug: 'www.igate.mx',
-	// 			url: 'https://play.google.com/store/apps/details?id=com.mobile.igate',
-	// 			img: '/img/igate.png',
-	// 			services: [
-	// 				'App móvil',
-	// 				'Desarrollo Web'
-	// 			]
-	// 		},
-	// 		{
-	// 			name: 'Inspecciones APP',
-	// 			slug: 'App Privada',
-	// 			url: '',
-	// 			img: '/img/inspecciones.png',
-	// 			services: [
-	// 				'App móvil',
-	// 				'Web API'
-	// 			]
-	// 		}
-	// 	]
-	// },
 	{
 		title: 'Wordpress',
 		projects: [

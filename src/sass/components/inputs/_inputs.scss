@@ -1,15 +1,19 @@
+/*
+ * @version 1.0.0
+ * @description Estilos para las entradas de datos
+*/
 
 .input {    
     color: #7a7b7b;
     font-family: $IBM;
     font-weight: $weightMedium;
     background-color: #f5f6f7;
-    border: 1px solid #dcddde;
+    border: 2px solid #dcddde;
     padding: $paddingMedium $paddingNormal;
     transition: border 400ms ease-in-out;
 
     &:focus {
-        border: 1px solid $aqua;
+        border: 2px solid var(--aqua);
     }
 
 }
@@ -21,4 +25,16 @@
 .textarea {
     resize: none;
     width: 100%;
+}
+
+.page-home {
+    
+    .contact {
+
+        .input-group {
+            min-width: 48%;
+        }
+
+    }
+    
 }

@@ -1,9 +1,13 @@
+/*
+ * @version 1.1.0
+ * @description Estilos del componente Footer
+*/
 
 footer {
 
     .footer-top {
 
-        background-color: $primary-alt;
+        background-color: var(--primary-alt);
 
         img { max-height: 50px; }
 
@@ -24,7 +28,7 @@ footer {
                     width: 32px;
                     height: 32px;
                     border-radius: 4px;
-                    background-color: $white;
+                    background-color: var(--white);
                     margin-bottom: $marginSemi;
                 }
     
@@ -32,6 +36,19 @@ footer {
 
         }
 
+    }
+
+
+}
+
+html[data-theme='dark'] {
+ 
+    footer {
+
+        .footer-top {
+            background-color: var(--white);
+        }
+        
     }
 
 }

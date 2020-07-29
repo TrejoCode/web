@@ -1,6 +1,6 @@
 /**
  * @version 1.0.0
- * @author Sergio - Trejocode
+ * @author Trejocode - Sergio
  * @description Página /index
 */
 
@@ -10,7 +10,7 @@ import Layout 				from '../components/layout';
 import projects 			from '../../public/data/projects';
 import cogoToast 			from 'cogo-toast';
 import ReCAPTCHA 			from "react-google-recaptcha";
-import Request 				from '../utils/http';
+import { post } 			from '../api';
 
 const PageIndex = () => {
 
@@ -25,8 +25,8 @@ const PageIndex = () => {
 				email:		form.email.value,
 				message:	form.message.value
 			};
-			const request = new Request();
-			const { result, error } = await request.post('/email/contact/single', data);
+			
+			const { result, error } = await post('/email/contact/single', data);
 			if (result && result.replied) {
 				cogoToast.success('Mensaje enviado');
 			} else {
@@ -43,7 +43,7 @@ const PageIndex = () => {
 
 	return(	
 		<Layout>
-			<div className="home column">
+			<div className="page-home column">
 				<div className="banner justify-center wow fadeIn" data-wow-delay="200ms">
 					<div className="container row-responsive">
 						<div className="left column">
@@ -52,11 +52,10 @@ const PageIndex = () => {
 							</h1>
 							<div className="white-space-24"></div>
 							<div className="column">
-								<h3 className="color-secondary-alt">
+								<h2 className="color-secondary-alt font-medium weight-semi">
 									Diseño y desarrollo sitios Web increíbles <br/>
 									responsivos, rápidos y autoadministrables
-								</h3>
-								
+								</h2>
 							</div>
 							<div className="white-space-24"></div>
 							<div className="btn-container full">
@@ -76,8 +75,8 @@ const PageIndex = () => {
 				<div className="services justify-center wow fadeIn" id="services">
 					<div className="container row-responsive row-responsive-ipad">
 						<div className="left column">
-							<h2 className="color-primary-alt">
-								<span className="color-primary weight-bold">{"{ "}</span> 
+							<h2 className="color-secondary-alt">
+								<span className="color-secondary-alt weight-bold">{"{ "}</span> 
 								SERVICIOS
 							</h2>
 							<div className="white-space-16"></div>
@@ -89,11 +88,11 @@ const PageIndex = () => {
 								¡Trabajemos juntos! Mi pasión es desarrollar la Web, cuénteme su idea y haré todo lo demás.
 							</p>
 							<div className="white-space-8"></div>
-							<p className="weight-medium">
+							<p className="weight-medium color-secondary">
 								<b> Pasa el mouse sobre el servicio para observar un cool efecto ✨</b>
 							</p>
 							<div className="white-space-32"></div>
-							<h3 className="color-primary-alt">
+							<h3 className="color-secondary-alt">
 								PROCESO
 							</h3>
 							<div className="white-space-16"></div>
@@ -306,13 +305,12 @@ const PageIndex = () => {
 							<div className="white-space-64"></div>
 						</div>
 					</div>
-				</div>						
-				
+				</div>
 				<div className="portfolio justify-center" id="projects">
 					<div className="container column">
 						<div className="white-space-64"></div>
-						<h2 className="color-primary-alt">
-							<span className="color-primary weight-bold">{"{"}</span> PROYECTOS
+						<h2 className="color-secondary-alt">
+							<span className="color-secondary-alt weight-bold">{"{"}</span> PROYECTOS
 						</h2>
 						<div className="white-space-16"></div>
 						<p className="weight-medium">
@@ -323,7 +321,7 @@ const PageIndex = () => {
 							{ projects[0].projects.map((project, key) => key < 9 &&
 								<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
 									<div className="image responsive-img justify-center align-center">
-										<img src = { project.img } alt = { project.title } title = { project.title } />
+										<img src = { project.img } alt = { project.name } title = { project.name } />
 									</div>
 									<div className="white-space-16"></div>
 									<div className="information column align-center">
@@ -372,12 +370,28 @@ const PageIndex = () => {
 						<div className="justify-center align-center">
 							<form method="POST" className="column" onSubmit = { handleSubmit }>
 								<div className="row justify-between">
-									<input type="text" name="name" minLength="6" maxLength="60" className="input input-radius" placeholder="Nombre" required />
-									<input type="email" name="email" minLength="8" maxLength="100" className="input input-radius" placeholder="Correo electrónico" required />
+									<div className="input-group column">
+										<label htmlFor="name" className="color-darkgray weight-semi">
+											Nombre:
+										</label>
+										<div className="white-space-4"></div>
+										<input type="text" name="name" id="name" minLength="6" maxLength="60" className="input input-radius" required />
+									</div>
+									<div className="input-group column">
+										<label htmlFor="email" className="color-darkgray weight-semi">
+											Correo:
+										</label>
+										<div className="white-space-4"></div>
+										<input type="email" name="email" id="email" minLength="8" maxLength="100" className="input input-radius" required />
+									</div>
 								</div>
 								<div className="white-space-16"></div>
-								<div className="row">
-									<textarea name="message" rows="10" minLength="25" maxLength="600" className="input input-radius textarea" placeholder="Redacta tu mensaje, proyecto o seamos amigos :)" required></textarea>
+								<div className="column">
+									<label htmlFor="message" className="color-darkgray weight-semi">
+										Redacta tu mensaje:
+									</label>
+									<div className="white-space-4"></div>
+									<textarea name="message" rows="10" minLength="25" maxLength="600" className="input input-radius textarea" required></textarea>
 								</div>
 								<div className="white-space-16"></div>
 								<div className="justify-center">

@@ -1,5 +1,9 @@
+/*
+ * @version 1.1.0
+ * @description Estilos de la página de /
+*/
 
-.home {
+.page-home {
 
     .banner {
         min-height: 700px;
@@ -24,7 +28,7 @@
     .services {
         padding: 4rem 0;
         min-height: 600px;
-        background-color: $lightBg;
+        background-color: var(--lightBg);
 
         .left {
             top: 0;
@@ -34,7 +38,7 @@
             margin-right: $paddingLarge;
             p {
                 padding: 0 $paddingNormal;
-                b { color: $primary-alt; }
+                b { color: var(--secondary-alt); }
             }
         }
 
@@ -45,7 +49,7 @@
 
         .card {
             width: 50%;
-            background-color: $white;
+            background-color: var(--white);
             box-shadow: 2px 4px 2px #e9e9e9;
             transition: all 250ms ease-in-out;
             &:first-of-type { margin-right: $paddingNormal; }
@@ -54,7 +58,7 @@
         }
 
         .card-head {
-            background-color: $primary;
+            background-color: var(--primary);
             border-radius: 4px 4px 0 0;
 
             img { border-radius: 4px 4px 0 0; }
@@ -75,7 +79,7 @@
     
             .card-footer {
                 height: 70px;
-                border-top: 2px solid $lightBg;
+                border-top: 2px solid var(--lightBg);
             }
     
             .footer-content {
@@ -87,7 +91,7 @@
     
     .about {
 
-        background-color: $white;
+        background-color: var(--white);
 
         .left {
             width: 40%;
@@ -111,7 +115,7 @@
     }
 
     .portfolio {
-        background-color: $lightBg;
+        background-color: var(--lightBg);
 
         .project-container {
             justify-content: space-between;
@@ -121,7 +125,7 @@
             width: 31%;
             border-radius: 4px;
             padding: $paddingNormal;
-            background-color: $white;
+            background-color: var(--white);
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             margin: $marginMedium $marginNormal;
 
@@ -143,29 +147,21 @@
 
     }
     
-
     .contact form {
         width: 60%;
     }
 
-    form input {
-        min-width: 48%;
-    }
-
     form a {
-        color: $gray;
+        color: var(--gray);
     }
 
     form .btn {
         width: 35%;
     }
 
-}
 
-@media screen and (max-width: 1024px) {
-
-    .home {
-
+    @media screen and (max-width: 1024px) {
+            
         .banner {
             .left {
                 width: 60%;
@@ -199,7 +195,7 @@
 
                 .responsive-img { width: 100%; }
 
-                background-color: $primary;
+                background-color: var(--primary);
                 border-radius: 4px 4px 0 0;
     
                 img { 
@@ -229,7 +225,7 @@
         }
 
         .portfolio {
-            background-color: $lightBg;
+            background-color: var(--lightBg);
     
             .project-container {
                 justify-content: space-between;
@@ -247,12 +243,9 @@
         
     }
 
-}
 
-@media screen and (max-width: 768px) {
-
-    .home {
-
+    @media screen and (max-width: 768px) {
+    
         .banner {
 
             min-height: 600px;
@@ -346,14 +339,12 @@
         }
 
     }
-}
-
-@media screen and (max-width: 576px) {
-
-    .home {
+    
+    @media screen and (max-width: 576px) {
+    
         .banner {
             .left {
-                h3 {
+                h2 {
                     text-align: center;
                     font-size: $fontRegular;
                 }
@@ -419,12 +410,9 @@
         }
 
     }
+    
 
-}
-
-@media screen and (max-width: 330px) {
-
-    .home {
+    @media screen and (max-width: 330px) {
 
         .about {
             .right {
@@ -433,5 +421,6 @@
         }
 
     }
+
 
 }
