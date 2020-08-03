@@ -1,13 +1,14 @@
 /**
- * @version 1.0.0
+ * @version 1.0.1
  * @author Trejocode - Sergio
  * @description Página /index
 */
 
 import React, { useState } 	from 'react';
 import Link 				from 'next/link';
-import Layout 				from '../components/layout';
-import projects 			from '../../public/data/projects';
+import Layout 				from '../components/Layout';
+import CardProjects			from '../components/cards/Project';
+import projects 			from '../../public/data/projects.json';
 import cogoToast 			from 'cogo-toast';
 import ReCAPTCHA 			from "react-google-recaptcha";
 import { post } 			from '../api';
@@ -71,7 +72,6 @@ const PageIndex = () => {
 						</div>
 					</div>
 				</div>
-
 				<div className="services justify-center wow fadeIn" id="services">
 					<div className="container row-responsive row-responsive-ipad">
 						<div className="left column">
@@ -144,7 +144,6 @@ const PageIndex = () => {
 										</div>
 									</div>
 								</div>
-
 								<div className="card column wow fadeIn" data-wow-delay="0.2s">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
@@ -227,8 +226,7 @@ const PageIndex = () => {
 							<div className="white-space-32"></div>
 						</div>
 					</div>
-				</div>			                
-				
+				</div>
 				<div className="about justify-center wow fadeIn" id="about">
 					<div className="container row-responsive">
 						<div className="left column">
@@ -267,13 +265,15 @@ const PageIndex = () => {
 							</p>
 							<div className="white-space-16"></div>
 							<p>
-								<span className="color-primary weight-bold">{"{"}</span><b> Empleos </b><span className="color-primary weight-bold">}</span>
+								<span className="color-primary weight-bold">{"{"}</span><b> Empleos </b><span className="color-primary weight-bold">{"}"}</span>
 							</p>
 							<div className="white-space-8"></div>
 							<p>
 								- <b>ACTUAL:</b> Desarrollador Web Fullstack: 
 								<b>
-									<a rel="noopener" target="_blank" href="https://www.moonpalacecancun.com/"> Moon Palace</a>
+									<a rel="noopener" target="_blank" href="https://www.jako.mx/">&nbsp;
+										Grupo Jako
+									</a>
 								</b>
 							</p>
 							<p>
@@ -290,7 +290,7 @@ const PageIndex = () => {
 							</p>
 							<div className="white-space-16"></div>
 							<p>
-								<span className="color-primary weight-bold">{"{"}</span><b> Freelance </b><span className="color-primary weight-bold">}</span>
+								<span className="color-primary weight-bold">{"{"}</span><b> Freelance </b><span className="color-primary weight-bold">{"}"}</span>
 							</p>
 							<div className="white-space-8"></div>
 							<p>
@@ -318,31 +318,7 @@ const PageIndex = () => {
 						</p>
 						<div className="white-space-32"></div>
 						<div className="project-container wrap"> 
-							{ projects[0].projects.map((project, key) => key < 9 &&
-								<div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
-									<div className="image responsive-img justify-center align-center">
-										<img src = { project.img } alt = { project.name } title = { project.name } />
-									</div>
-									<div className="white-space-16"></div>
-									<div className="information column align-center">
-										<div className="title full column">
-											<div className="web full justify-center">
-												<a className="color-primary-alt text-center font-large weight-semi" href= { project.url } target="_blank" rel="noopener">
-													{ project.name }
-												</a>
-											</div>
-										</div>
-										<div className="description full">
-											{ project.services.map((service, index) =>
-												<h5 className="color-gray font-tiny" key = { index }>
-													{ service }
-												</h5>
-											)}
-										</div>
-									</div>
-									<div className="white-space-16"></div>
-								</div>
-							)}
+							<CardProjects projects = { projects } index = { 0 } limit = { 9 } />			
 						</div>
 						<div className="white-space-32"></div>
 						<div className="btn-container justify-center">
