@@ -12,7 +12,7 @@ import CardProjects	from '../components/cards/Project';
 const PagePortafolio = () => {
 
 	return(	
-		<Layout title = "Portafolio" description = "Explora todos los proyectos que realicé o participé">
+		<Layout title = "Portafolio" description = "Explora todos los proyectos que realicé o participé como desarrollador">
             <div className="page-portafolio justify-center">
                 <div className="container column">
                     <div className="white-space-48"></div>

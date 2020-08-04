@@ -1,11 +1,11 @@
 /**
- *  @version 1.0.0
- *  @author Trejocode - Sergio
- *  @description Cliente HTTP para todas las peticiones Web
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description Cliente HTTP para todas las peticiones Web
 */
 
 import axios from 'axios';
-const baseUrl = process.env.API_ENDPOINT;
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
 /**
  * @description Realizar petición HTTP GET
@@ -16,7 +16,7 @@ export const get = async (endpoint) => {
     try {
         const { data } = await axios.get(`${baseUrl}${endpoint}`, {
             headers: {
-                'artc_api_key': process.env.API_KEY
+                'Authorization': process.env.API_KEY
             }
         });
         return { data };
@@ -41,7 +41,7 @@ export const post = async (endpoint, payload) => {
     try {
         const { data } = await axios.post(`${baseUrl}${endpoint}`, payload, {
             headers: {
-                'artc_api_key': process.env.API_KEY
+                'Authorization': process.env.API_KEY
             }
         });
         return { data };

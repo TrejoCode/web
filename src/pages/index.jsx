@@ -21,18 +21,22 @@ const PageIndex = () => {
 		event.preventDefault();
 		if (captcha) {
 			const form = event.target;
-			const data = {
+			const payload = {
 				name: 		form.name.value,
 				email:		form.email.value,
 				message:	form.message.value
 			};
 			
-			const { result, error } = await post('/email/contact/single', data);
-			if (result && result.replied) {
-				cogoToast.success('Mensaje enviado');
-			} else {
-				cogoToast.error(error.message);
+			const { data, error } = await post('/email/contact/single', payload);
+
+			if (error) {
+				console.log(error);
+				cogoToast.error(error, { heading: 'No fue posible enviar el mensaje', hideAfter: 5 });
+				return false;
 			}
+
+			console.log(data);
+
 		} else {
 			cogoToast.error("¡Oh no! Verifica que no seas un robot");
 		}
@@ -371,9 +375,11 @@ const PageIndex = () => {
 								</div>
 								<div className="white-space-16"></div>
 								<div className="justify-center">
-									<a href="/privacidad">
-										Al enviar aceptas la política de privacidad del sitio Web, puedes consultarlo con un click.
-									</a>
+									<Link href="/politicas">
+										<a>
+											Al enviar aceptas la política de privacidad del sitio Web, puedes consultarlo con un click.
+										</a>
+									</Link>
 								</div>
 								<div className="white-space-16"></div>
 								<div className="justify-center align-center">

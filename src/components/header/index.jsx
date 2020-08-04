@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="left row align-center auto">
                     <div className="logo">
                         <Link href="/">
-                            <a aria-label="Trejocode Logo Inicio">
+                            <a aria-label="Trejocode Logo Inicio" role="img">
                                 <img src="/img/logo.png" alt="Trejocode logo" title="Trejocode logo" className="wow fadeInLeft" />
                             </a>
                         </Link>

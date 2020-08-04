@@ -1,7 +1,7 @@
 /**
- *  @version 1.1.0
- *  @author Sergio - Trejocode
- *  @description Custom config para GA
+ * @version 1.1.0
+ * @author Sergio - Trejocode
+ * @description Custom config para GA
 */
 
 export const GA_TRACKING_ID = process.env.GA_ID;
