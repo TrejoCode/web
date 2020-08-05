@@ -30,15 +30,14 @@ const PageIndex = () => {
 			const { data, error } = await post('/email/contact/single', payload);
 
 			if (error) {
-				console.log(error);
 				cogoToast.error(error, { heading: 'No fue posible enviar el mensaje', hideAfter: 5 });
 				return false;
 			}
 
-			console.log(data);
+			cogoToast.success("Gracias por comunicarte", { heading: 'Mensaje Enviado', hideAfter: 4 });
 
 		} else {
-			cogoToast.error("¡Oh no! Verifica que no seas un robot");
+			cogoToast.error("¡Oh no! Verifica que no seas un robot", { heading: "¿Eres un humano?", hideAfter: 3 });
 		}
 	};
 

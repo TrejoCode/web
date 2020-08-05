@@ -16,7 +16,7 @@ export const get = async (endpoint) => {
     try {
         const { data } = await axios.get(`${baseUrl}${endpoint}`, {
             headers: {
-                'Authorization': process.env.API_KEY
+                'Authorization': process.env.NEXT_PUBLIC_API_KEY
             }
         });
         return { data };
@@ -41,7 +41,7 @@ export const post = async (endpoint, payload) => {
     try {
         const { data } = await axios.post(`${baseUrl}${endpoint}`, payload, {
             headers: {
-                'Authorization': process.env.API_KEY
+                'Authorization': process.env.NEXT_PUBLIC_API_KEY
             }
         });
         return { data };

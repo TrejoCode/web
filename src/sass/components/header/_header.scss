@@ -22,7 +22,7 @@ header {
         }        
     }
 
-    .social a {
+    .social a, .social button {
         color: var(--primary-alt);
         padding: 0 $paddingNormal;
         transition: color 300ms ease-in-out;

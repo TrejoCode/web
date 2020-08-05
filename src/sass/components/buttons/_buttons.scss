@@ -35,3 +35,24 @@ button, .btn {
     font-size: $fontSmall;
     padding: $paddingMedium $paddingSemi;
 }
+
+header {
+
+    .btn-light-toggle {
+        background-color: transparent;
+    }
+
+}
+
+
+html[data-theme='dark'] {
+ 
+    .btn-primary {
+        color: var(--black);
+        background-color: #535353;
+        &:hover {
+            background-color: #6c6c6c;
+        }
+    }
+
+}

@@ -4,7 +4,7 @@
  * @description Custom config para GA
 */
 
-export const GA_TRACKING_ID = process.env.GA_ID;
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 /**
  * @description Asignar la página actual al visor de GA
