@@ -1,11 +1,10 @@
 /**
  * @version 1.0.0
- * @author trejocode
- * @description Next.js config for SASS and PWA
+ * @author Trejocode - Sergio
+ * @description Configuraciones adicionales para next.js
 */
 
-const withPlugins   = require('next-compose-plugins');
-const PWA           = require('next-pwa');
-const sass          = require('@zeit/next-sass');
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
 
-module.exports      = withPlugins([[PWA, { pwa: { dest: 'public' } }], sass]);
+module.exports = withPWA({pwa: { dest: 'public', runtimeCaching }});

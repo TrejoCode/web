@@ -1,37 +1,32 @@
-
+/*
+ * @version 1.1.0
+ * @description Estilos de la página de /portafolio
+*/
 
 .page-portafolio {
 
-    background-color: $lightBg;
+    background-color: var(--lightBg);
 
     .portfolio {
-        background-color: $lightBg;
 
-        .project-container {
-            justify-content: space-between;
-        }
+        .project-container { justify-content: space-between; }
 
         .project {
+
             width: 31%;
             border-radius: 4px;
             padding: $paddingNormal;
-            background-color: $white;
+            background-color: var(--white);
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             margin: $marginMedium $marginNormal;
 
             .image {
-                img {
-                    max-height: 180px;
-                }
+                img { max-height: 180px; }
             }
 
-            .web {
-                margin-bottom: $marginSemi;
-            }
+            .web { margin-bottom: $marginSemi; }
 
-            .description {
-                justify-content: space-around;
-            }
+            .description { justify-content: space-around; }
 
         }
 
@@ -40,16 +35,17 @@
     @media screen and (max-width: 1024px) {
 
         .portfolio {
-            background-color: $lightBg;
+
+            background-color: var(--lightBg);
     
-            .project-container {
-                justify-content: space-between;
-            }
+            .project-container { justify-content: space-between; }
     
             .project {
     
                 .title { 
+
                     a { font-size: 1.4rem; }
+
                 }
     
             }
@@ -61,7 +57,9 @@
     @media screen and (max-width: 768px) {
     
         .portfolio {
+
             .project { width: 45%; }
+
         }
         
     }
@@ -69,22 +67,60 @@
     @media screen and (max-width: 576px) {
     
         .portfolio {
+
             .project {
+
                 width: 100%;
     
                 .image {
-                    img {
-                        max-height: 140px;
-                    }
+
+                    img { max-height: 140px; }
+
                 }
     
                 .title { 
+
                     a { font-size: 1.25rem; }
+
                 }
     
             }
+            
         }
         
+    }
+
+}
+
+html[data-theme='dark'] {
+ 
+    .page-portafolio {
+
+        background-color: #2c2c2c;
+
+        .services {
+    
+            .card {
+                box-shadow: 2px 4px 2px var(--white);
+                &:hover { box-shadow: 0px 4px 3px rgba(23, 49, 54, 0.3); }
+            }
+    
+        }
+
+        .portfolio {
+    
+            .project {
+    
+                .image {
+
+                    background-color: #ffffff;
+
+                }
+    
+            }
+    
+        }
+
     }
 
 }

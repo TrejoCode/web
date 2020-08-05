@@ -1,6 +1,6 @@
 /*
-*   @name nprogress.scss
-*   @description Librería de NProgress
+* @name nprogress.scss
+* @description Librería de NProgress
 */
 
 #nprogress { pointer-events: none; }
@@ -12,7 +12,7 @@
 	height: 5px;
 	width: 100%;
 	position: fixed;
-	background-color: $primary;
+	background-color: var(--primary);
 }
 
 #nprogress .peg {	
@@ -22,7 +22,7 @@
 	opacity: 1.0;
 	display: block;
 	position: absolute;
-	box-shadow: 0 0 10px $primary, 0 0 5px $primary;
+	box-shadow: 0 0 10px var(--primary), 0 0 5px var(--primary);
 	-webkit-transform: rotate(3deg) translate(0px, -4px);
 	-ms-transform: rotate(3deg) translate(0px, -4px);
 	transform: rotate(3deg) translate(0px, -4px);
@@ -40,8 +40,8 @@
 	width: 18px;
 	height: 18px;
 	box-sizing: border-box;	
-	border-top-color: $primary;
-	border-left-color: $primary;
+	border-top-color: var(--primary);
+	border-left-color: var(--primary);
 	border-radius: 50%;
 	border: solid 2px transparent;
 	-webkit-animation: nprogress-spinner 400ms linear infinite;

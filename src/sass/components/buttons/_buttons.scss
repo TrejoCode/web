@@ -1,5 +1,5 @@
-/**
- * @version 1.0.0
+/*
+ * @version 1.1.0
  * @description Estilos para los botones
 */
 
@@ -15,24 +15,44 @@ button, .btn {
     padding: $paddingNormal $paddingMedium;
 }
 
-// Sizing
 .btn-medium {
     padding: 14px $paddingMedium;
 }
 
 .btn-primary {
-    color: $white;
-    background-color: $primary;
+    color: var(--white);
+    background-color: var(--primary);
     &:hover {
-        background-color: $primary-alt;
+        background-color: var(--primary-alt);
     }
 }
 
 .btn-secondary {
-    background-color: $secondary;
+    background-color: var(--secondary);
 }
 
 .btn-large {
     font-size: $fontSmall;
     padding: $paddingMedium $paddingSemi;
+}
+
+header {
+
+    .btn-light-toggle {
+        background-color: transparent;
+    }
+
+}
+
+
+html[data-theme='dark'] {
+ 
+    .btn-primary {
+        color: var(--black);
+        background-color: #535353;
+        &:hover {
+            background-color: #6c6c6c;
+        }
+    }
+
 }

@@ -1,12 +1,13 @@
 /**
- * @version 1.0.0
- * @author Sergio - Trejocode
+ * @version 1.0.1
+ * @author Trejocode - Sergio
  * @description Plantilla HTML inicial
 */
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { GA_TRACKING_ID } from '../utils/gtag';
 
-class MyDocument extends Document {
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { GA_TRACKING_ID } from '../helpers/ga';
+
+class DocumentHTML extends Document {
 
 	static async getInitialProps(ctx) {
 		const initialProps = await Document.getInitialProps(ctx);
@@ -15,7 +16,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html lang="es">
+			<Html lang="es-MX">
 				<Head />
 				<body>
 					<Main />
@@ -26,13 +27,13 @@ class MyDocument extends Document {
 					<script
 						dangerouslySetInnerHTML = {{
 						__html: `
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						gtag('config', '${GA_TRACKING_ID}', {
-						page_path: window.location.pathname,
-						});
-					`,
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', '${GA_TRACKING_ID}', {
+							page_path: window.location.pathname,
+							});
+						`,
 						}}
 					/>
 				</body>
@@ -41,4 +42,4 @@ class MyDocument extends Document {
 	}
 }
 
-export default MyDocument;
+export default DocumentHTML;
