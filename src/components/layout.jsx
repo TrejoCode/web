@@ -8,6 +8,7 @@ import React    from 'react';
 import Head     from 'next/head';
 import Header   from '../components/header';
 import Footer   from '../components/footer';
+import Popover  from '../components/popover';
 
 /**
  * @description Plantilla general de la aplicación
@@ -16,7 +17,7 @@ import Footer   from '../components/footer';
  * @param { String } keywords: "meta keywords"
 */
 
-const Layout = ({ title, description, keywords, children }) => {
+const Layout = ({ title, description, keywords, children, options = null }) => {
     return(
         <div className="flex main column">
             <Head>
@@ -51,6 +52,9 @@ const Layout = ({ title, description, keywords, children }) => {
                 <meta name = "twitter:image"          content = "https://res.cloudinary.com/trejocode/image/upload/v1585867983/Trejocode/og_ccf7n6.jpg" />
                 <meta name = "twitter:description"    content = { description ? description : "Diseño y desarrollo Web, Progressive Web Apps y desarrollo de Software en Cancún | Trejocode" } />
             </Head>
+            { options && options.popover && 
+                <Popover link = { options.popover.link } description = { options.popover.description } /> 
+            }
             <Header />
             <main>
                 { children }

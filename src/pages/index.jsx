@@ -18,7 +18,9 @@ const PageIndex = () => {
 	const [captcha, setCaptcha] = useState(null);
 
 	const handleSubmit = async (event) => {
+
 		event.preventDefault();
+
 		if (captcha) {
 			const form = event.target;
 			const payload = {
@@ -27,7 +29,7 @@ const PageIndex = () => {
 				message:	form.message.value
 			};
 			
-			const { data, error } = await post('/email/contact/single', payload);
+			const { error } = await post('/email/contact/single', payload);
 
 			if (error) {
 				cogoToast.error(error, { heading: 'No fue posible enviar el mensaje', hideAfter: 5 });
@@ -39,20 +41,20 @@ const PageIndex = () => {
 		} else {
 			cogoToast.error("¡Oh no! Verifica que no seas un robot", { heading: "¿Eres un humano?", hideAfter: 3 });
 		}
+
 	};
 
-	const onchangeCaptcha = (token) => {
-		setCaptcha(token);
-	};
+	const onchangeCaptcha = (token) => setCaptcha(token);
+	
 
 	return(	
-		<Layout>
+		<Layout options = {{ popover: { link: "https://b4a.trejocode.com", description: "Aprende a crear aplicaciones Android, accede al curso, click aquí" } }}>
 			<div className="page-home column">
 				<div className="banner justify-center wow fadeIn" data-wow-delay="200ms">
 					<div className="container row-responsive">
 						<div className="left column">
 							<h1 className="color-secondary">
-								¡Hola, i'm <span className="color-primary">trejocode!</span> 👋
+								¡Hola, i'm <span className="color-primary">trejocode!</span> <span role="img" aria-label="Emoji de Saludos">👋</span>
 							</h1>
 							<div className="white-space-24"></div>
 							<div className="column">
@@ -89,10 +91,6 @@ const PageIndex = () => {
 							<div className="white-space-8"></div>
 							<p className="text-justify weight-semi">
 								¡Trabajemos juntos! Mi pasión es desarrollar la Web, cuénteme su idea y haré todo lo demás.
-							</p>
-							<div className="white-space-8"></div>
-							<p className="weight-medium color-secondary">
-								<b> Pasa el mouse sobre el servicio para observar un cool efecto ✨</b>
 							</p>
 							<div className="white-space-32"></div>
 							<h3 className="color-secondary-alt">
@@ -253,7 +251,7 @@ const PageIndex = () => {
 							</h2>
 							<div className="white-space-16"></div>
 							<p>
-								<b>Ingeniero en Software, entusiasta del desarrollo Web, desde Cancún, México 🏖️</b>
+								<b>Ingeniero en Software, entusiasta del desarrollo Web, desde Cancún, México <span role="img" aria-label="Emoji de playa">🏖️</span></b> 
 							</p>
 							<div className="white-space-8"></div>
 							<p>

@@ -3,18 +3,35 @@
  * @description Estilos del componente PopOver
 */
 
-.popover-top {
+.popover {
+
     padding: 10px 0;
-    background-color: var(--aqua);
-    a {
-        font-size: 0.93rem;
+    background-color: var(--primary);
+
+    a { 
+        font-size: 0.93rem; 
+        color: var(--white);
+        font-weight: $weightSemi;
     }
+
+    @media screen and (max-width: 768px) {
+        
+        a { font-size: 0.9rem; }
+    
+    }
+
 }
 
-@media screen and (max-width: 768px) {
+html[data-theme='dark'] {
 
-    .popover-top {
-        a { font-size: 0.9rem; }
+    .popover {
+
+        background-color: var(--white);
+    
+        a {
+            color: var(--black);
+        }
+    
     }
 
 }

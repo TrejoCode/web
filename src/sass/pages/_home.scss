@@ -6,48 +6,61 @@
 .page-home {
 
     .banner {
+
         min-height: 700px;
 
         .left {
+
             width: 50%;
             justify-content: center;
-            .btn {
-                width: 430px;
-            }
+
+            .btn { width: 430px; }
+
         }
 
         .right {
+
             width: 50%;
-            img {
-                max-width: 400px;
-            }
+
+            img { max-width: 400px; }
+
         }
 
     }
 
     .services {
+
         padding: 4rem 0;
         min-height: 600px;
         background-color: var(--lightBg);
 
         .left {
+
             top: 0;
             width: 40%;
             position: sticky;  
             align-self: flex-start;
             margin-right: $paddingLarge;
+
             p {
+
                 padding: 0 $paddingNormal;
+
                 b { color: var(--secondary-alt); }
+
             }
+
         }
 
         .right {
+
             width: 60%;
             margin-left: $paddingNormal;
+
         }
 
         .card {
+
             width: 50%;
             background-color: var(--white);
             box-shadow: 2px 4px 2px #e9e9e9;
@@ -55,9 +68,11 @@
             &:first-of-type { margin-right: $paddingNormal; }
             &:last-of-type { margin-left: $paddingNormal; }
             &:hover { box-shadow: 0px 4px 3px rgba(37, 131, 149, 0.3); }
+
         }
 
         .card-head {
+
             background-color: var(--primary);
             border-radius: 4px 4px 0 0;
 
@@ -66,6 +81,7 @@
         }
 
         .card-body {
+
             padding: $paddingMedium;
             border-radius: 0 0 4px 4px;
     
@@ -85,6 +101,7 @@
             .footer-content {
                 padding: $paddingNormal 0;
             }
+
         }
 
     }
@@ -94,34 +111,42 @@
         background-color: var(--white);
 
         .left {
+
             width: 40%;
 
             .me-picture {
+
                 margin-bottom: $paddingLarge;
+
                 img { 
                     height: 400px;
                     padding-right: $paddingNormal;
                 }
+
             }
 
         }
 
         .right {
+
             width: 60%;
+
             h2 { font-size: 1.55rem; }
+
             p { padding: 0 $paddingNormal; }
+
         }
 
     }
 
     .portfolio {
+
         background-color: var(--lightBg);
 
-        .project-container {
-            justify-content: space-between;
-        }
+        .project-container { justify-content: space-between; }
 
         .project {
+
             width: 31%;
             border-radius: 4px;
             padding: $paddingNormal;
@@ -130,50 +155,57 @@
             margin: $marginMedium $marginNormal;
 
             .image {
-                img {
-                    max-height: 180px;
-                }
+
+                img { max-height: 180px; }
+
             }
 
-            .web {
-                margin-bottom: $marginSemi;
-            }
+            .web { margin-bottom: $marginSemi; }
 
-            .description {
-                justify-content: space-around;
-            }
+            .description { justify-content: space-around; }
 
         }
 
     }
     
-    .contact form {
-        width: 60%;
-    }
+    .contact {
 
-    form a {
-        color: var(--gray);
-    }
+        form {
 
-    form .btn {
-        width: 35%;
+            width: 60%;
+
+            a { color: var(--gray); }
+
+            .btn { width: 35%; }
+
+        }
+
     }
 
 
     @media screen and (max-width: 1024px) {
             
         .banner {
+
             .left {
+
                 width: 60%;
+
                 .btn { width: 400px; }
+
             }
+
             .right {
+
                 width: 40%;
+
                 img {
                     z-index: -1;
                     max-width: 300px;
                 }
+
             }
+            
         }
 
         .services {
@@ -209,32 +241,38 @@
         }
 
         .about {
+
             .left {
+
                 img {
                     width: 85%;
                     height: auto;
                     padding-right: 0;
                     object-fit: cover;
                 }
+
             }
 
             .right {
-                p { padding: 0; }   
+
+                p { padding: 0; }  
+
             }
 
         }
 
         .portfolio {
+
             background-color: var(--lightBg);
     
-            .project-container {
-                justify-content: space-between;
-            }
+            .project-container { justify-content: space-between; }
     
             .project {
 
                 .title { 
+
                     a { font-size: 1.4rem; }
+
                 }
     
             }
@@ -256,10 +294,12 @@
                 align-items: center;
                 .btn-container { justify-content: center; }
             }
+
             .right {
                 width: 100%;
                 margin: $paddingLarge 0;
             }
+
         }
         
 
@@ -273,6 +313,7 @@
             }
             
             .right { 
+
                 margin-left: 0;
 
                 .card-container {
@@ -298,14 +339,20 @@
         .about {
             
             .left {
+
                 width: 100%;
+
                 .me-picture{
+
                     margin-bottom: 0;
+
                     .responsive-img { justify-content: center; align-items: center; }
+
                     img {
                         width: 100%;
                         height: auto;
                     }
+
                 }
             }
 
@@ -317,25 +364,30 @@
         }
 
         .portfolio {
+
             .project { width: 45%; }
+
         }
         
         
-        .contact form {
-            width: 100%;
-        }
+        .contact {
 
-        form input {
-            min-width: 45%;
-            margin: 0 4px;
-        }
+            form {
+                width: 100%;
 
-        form a {
-            text-align: center;
-        }
+                input {
 
-        form .btn {
-            width: 80%;
+                    min-width: 45%;
+                    margin: 0 4px;
+
+                }
+
+                a { text-align: center; }
+
+                .btn { width: 80%; }
+
+            }
+
         }
 
     }
@@ -343,13 +395,17 @@
     @media screen and (max-width: 576px) {
     
         .banner {
+
             .left {
+
                 h2 {
                     text-align: center;
                     font-size: $fontRegular;
                 }
+
                 br { display: none; }
             }
+
         }
 
 
@@ -363,6 +419,7 @@
             }
             
             .right { 
+
                 margin-left: 0;
 
                 .card-container { flex-direction: column; }
@@ -386,20 +443,22 @@
 
 
         .about {
+
             .right {
                 h2 { font-size: 1.5rem; }
             }
+
         }
 
         
         .portfolio {
+
             .project {
+
                 width: 100%;
     
                 .image {
-                    img {
-                        max-height: 140px;
-                    }
+                    img { max-height: 140px; }
                 }
     
                 .title { 
@@ -407,6 +466,7 @@
                 }
     
             }
+
         }
 
     }
@@ -415,9 +475,13 @@
     @media screen and (max-width: 330px) {
 
         .about {
+
             .right {
+
                 h2 { font-size: 1.37rem; }
+                
             }
+
         }
 
     }

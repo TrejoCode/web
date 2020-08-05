@@ -9,11 +9,10 @@
 
     .portfolio {
 
-        .project-container {
-            justify-content: space-between;
-        }
+        .project-container { justify-content: space-between; }
 
         .project {
+
             width: 31%;
             border-radius: 4px;
             padding: $paddingNormal;
@@ -22,18 +21,12 @@
             margin: $marginMedium $marginNormal;
 
             .image {
-                img {
-                    max-height: 180px;
-                }
+                img { max-height: 180px; }
             }
 
-            .web {
-                margin-bottom: $marginSemi;
-            }
+            .web { margin-bottom: $marginSemi; }
 
-            .description {
-                justify-content: space-around;
-            }
+            .description { justify-content: space-around; }
 
         }
 
@@ -42,16 +35,17 @@
     @media screen and (max-width: 1024px) {
 
         .portfolio {
+
             background-color: var(--lightBg);
     
-            .project-container {
-                justify-content: space-between;
-            }
+            .project-container { justify-content: space-between; }
     
             .project {
     
                 .title { 
+
                     a { font-size: 1.4rem; }
+
                 }
     
             }
@@ -63,7 +57,9 @@
     @media screen and (max-width: 768px) {
     
         .portfolio {
+
             .project { width: 45%; }
+
         }
         
     }
@@ -71,20 +67,25 @@
     @media screen and (max-width: 576px) {
     
         .portfolio {
+
             .project {
+
                 width: 100%;
     
                 .image {
-                    img {
-                        max-height: 140px;
-                    }
+
+                    img { max-height: 140px; }
+
                 }
     
                 .title { 
+
                     a { font-size: 1.25rem; }
+
                 }
     
             }
+            
         }
         
     }

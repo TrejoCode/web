@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "cogo-toast": "^4.2.3",
     "next": "9.5.0",
-    "next-compose-plugins": "^2.2.0",
     "next-pwa": "^3.1.1",
     "node-sass": "^4.14.1",
     "nprogress": "^0.2.0",
