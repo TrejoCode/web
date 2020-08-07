@@ -6,9 +6,9 @@
 
 import React    from 'react';
 import Head     from 'next/head';
-import Header   from '../components/header';
-import Footer   from '../components/footer';
-import Popover  from '../components/popover';
+import Header   from './header';
+import Footer   from './footer';
+import Popover  from './popover';
 
 /**
  * @description Plantilla general de la aplicación
