@@ -23,6 +23,7 @@ class DocumentHTML extends Document {
 					<NextScript />
 					<script deffer = "true" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" />
 					<script>new WOW().init();</script>
+					<script async data-account="cr2XyIS2q3" src="https://cdn.userway.org/widget.js"></script>
 					<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
 					<script
 						dangerouslySetInnerHTML = {{
