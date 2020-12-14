@@ -8,5 +8,6 @@ module.exports = {
             '/portafolio': { page: '/portafolio' },
             '/politicas': { page: '/politicas' }
         }
-    }
+    },
+    exportTrailingSlash: true
 }
