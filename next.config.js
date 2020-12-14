@@ -9,5 +9,5 @@ module.exports = {
             '/politicas': { page: '/politicas' }
         }
     },
-    exportTrailingSlash: true
+    trailingSlash: true
 }
