@@ -1,15 +1,15 @@
 /**
- * @version 1.0.0
+ * @version 1.2.0
  * @author Trejocode - Sergio
  * @description Página /portafolio
 */
 
 import React    from 'react';
-import Layout   from '../components/Layout';
+import Layout   from 'components/Layout';
 import projects from '../../public/data/projects.json';
-import CardProjects	from '../components/cards/Project';
+import CardProjects	from 'components/cards/Project';
 
-const PagePortafolio = () => {
+const PagePortafolio = _ => {
 
 	return(	
 		<Layout title = "Portafolio" description = "Explora todos los proyectos que realicé o participé como desarrollador">

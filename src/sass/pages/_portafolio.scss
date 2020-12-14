@@ -13,7 +13,7 @@
 
         .project {
 
-            width: 31%;
+            width: 30%;
             border-radius: 4px;
             padding: $paddingNormal;
             background-color: var(--white);
@@ -40,6 +40,8 @@
     
             .project {
     
+                margin: $marginMedium 0;
+
                 .title { 
 
                     a { font-size: 1.4rem; }

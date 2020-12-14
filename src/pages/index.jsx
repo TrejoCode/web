@@ -1,23 +1,24 @@
 /**
- * @version 1.0.1
+ * @version 1.2.0
  * @author Trejocode - Sergio
  * @description Página /index
 */
 
 import React, { useState } 	from 'react';
 import Link 				from 'next/link';
-import Layout 				from '../components/Layout';
-import CardProjects			from '../components/cards/Project';
+import Layout 				from 'components/Layout';
+import CardProjects			from 'components/cards/Project';
 import projects 			from '../../public/data/projects.json';
 import cogoToast 			from 'cogo-toast';
 import ReCAPTCHA 			from "react-google-recaptcha";
-import { post } 			from '../api';
+import { post } 			from 'api';
+import Img 					from 'react-cool-img';
 
-const PageIndex = () => {
+const PageIndex = _ => {
 
 	const [captcha, setCaptcha] = useState(null);
 
-	const handleSubmit = async (event) => {
+	const handleSubmit = async event => {
 
 		event.preventDefault();
 
@@ -43,14 +44,12 @@ const PageIndex = () => {
 		}
 
 	};
-
-	const onchangeCaptcha = (token) => setCaptcha(token);
 	
 
 	return(	
 		<Layout options = {{ popover: { link: "https://b4a.trejocode.com", description: "Aprende a crear aplicaciones Android, accede al curso, click aquí" } }}>
 			<div className="page-home column">
-				<div className="banner justify-center wow fadeIn" data-wow-delay="200ms">
+				<div className="banner justify-center wow fadeIn">
 					<div className="container row-responsive">
 						<div className="left column">
 							<h1 className="color-secondary">
@@ -72,7 +71,9 @@ const PageIndex = () => {
 						</div>
 						<div className="right align-center justify-center">
 							<div className="reponsive-img justify-center align-center wow fadeIn" data-wow-delay="300ms">
-								<img src="/img/banner-devices.png" alt="Web y Apps" title="Web y Apps" />
+								<Img 
+									placeholder = "/img/placeholders/banner-devices.png"
+									src="https://res.cloudinary.com/trejocode/image/upload/v1606613481/Trejocode/portfolio/banner-devices_us28ew.png" alt="Web y Apps" title="Web y Apps" />
 							</div>
 						</div>
 					</div>
@@ -123,7 +124,10 @@ const PageIndex = () => {
 								<div className="card column wow fadeIn" data-wow-delay="100ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
-											<img src="/img/design.jpg" alt="Diseño Web" title="Diseño Web" className="holder-image" />
+											<Img 
+												placeholder = "/img/placeholders/design.jpg"
+												src="https://res.cloudinary.com/trejocode/image/upload/v1606613478/Trejocode/portfolio/design_a8thbs.jpg" 
+												alt="Diseño Web" title="Diseño Web" className="holder-image" />
 										</div>
 									</div>
 									<div className="card-body column">
@@ -148,7 +152,10 @@ const PageIndex = () => {
 								<div className="card column wow fadeIn" data-wow-delay="0.2s">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
-											<img src="/img/develop.jpg" alt="Desarrollo Web" title="Desarrollo Web" className="holder-image" />
+											<Img 
+												placeholder = "/img/placeholders/develop.jpg"
+												src="https://res.cloudinary.com/trejocode/image/upload/v1606613478/Trejocode/portfolio/develop_bdfqut.jpg" 
+												alt="Desarrollo Web" title="Desarrollo Web" className="holder-image" />
 										</div>
 									</div>
 									<div className="card-body column">
@@ -176,7 +183,10 @@ const PageIndex = () => {
 								<div className="card column wow fadeIn" data-wow-delay="100ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
-											<img src="/img/apps.jpg" alt="Progressive Web Apps" title="Progressive Web Apps" className="holder-image" />
+											<Img 
+												placeholder = "/img/placeholders/apps.jpg"
+												src="https://res.cloudinary.com/trejocode/image/upload/v1606613481/Trejocode/portfolio/apps_law2ya.jpg" 
+												alt="Progressive Web Apps" title="Progressive Web Apps" className="holder-image" />
 										</div>
 									</div>
 									<div className="card-body column">
@@ -201,7 +211,10 @@ const PageIndex = () => {
 								<div className="card column wow fadeIn" data-wow-delay="200ms">
 									<div className="card-head justify-center align-center">
 										<div className="responsive-img">
-											<img src="/img/cursos.jpg" alt="Cursos y Capacitaciones" title="Cursos y Capacitaciones" className="holder-image" />
+											<Img 
+												placeholder = "/img/placeholders/cursos.jpg"
+												src="https://res.cloudinary.com/trejocode/image/upload/v1606613482/Trejocode/portfolio/cursos_u10dt0.jpg" 
+												alt="Cursos y Capacitaciones" title="Cursos y Capacitaciones" className="holder-image" />
 										</div>
 									</div>
 									<div className="card-body column">
@@ -234,7 +247,10 @@ const PageIndex = () => {
 							<div className="white-space-64"></div>
 							<div className="me-picture">
 								<div className="responsive-img column">
-									<img src="/img/me.jpg" alt="trejocode perfil" title="trejocode perfil" />
+									<Img 
+										placeholder = "/img/placeholders/me.jpg"
+										src="https://res.cloudinary.com/trejocode/image/upload/v1606613481/Trejocode/portfolio/me_qighks.jpg" 
+										alt="trejocode perfil" title="trejocode perfil" />
 									<div className="white-space-8"></div>
 									<p className="text-center">
 										Me, feliz porque visitas mi Web
@@ -380,7 +396,7 @@ const PageIndex = () => {
 								</div>
 								<div className="white-space-16"></div>
 								<div className="justify-center align-center">
-									<ReCAPTCHA sitekey = "6Le8vuEUAAAAAJITvX1KmJpYQrc4fyP8rlP5cNEq" size = "normal" onChange = { onchangeCaptcha } />
+									<ReCAPTCHA sitekey = "6Le8vuEUAAAAAJITvX1KmJpYQrc4fyP8rlP5cNEq" size = "normal" onChange = { token => setCaptcha(token) } />
 								</div>
 								<div className="white-space-16"></div>
 								<div className="btn-container justify-center">

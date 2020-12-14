@@ -6,10 +6,10 @@
 
 import React    from 'react';
 import Link     from 'next/link';
-import Layout   from '../components/Layout';
+import Layout   from 'components/Layout';
 import { FcDeleteDatabase } from 'react-icons/fc';
 
-const ErrorPage = () => {
+const ErrorPage = _ => {
 
 	return(	
 		<Layout title = "¡Oh no! La página no existe" description = "La página solicitada no existe">
