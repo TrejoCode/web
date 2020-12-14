@@ -5,10 +5,10 @@
 */
 
 import React    from 'react';
-import Layout   from '../components/Layout';
+import Layout   from 'components/Layout';
 
 
-const PagePolicies = () => {    
+const PagePolicies = _ => {    
 
 	return(
 		<Layout title = "Políticas de Privacidad y Recolección de datos - Trejocode">

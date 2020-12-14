@@ -8,21 +8,24 @@ Sitio Web oficial de trejocode.com - Construido en Next.js y servido estáticame
 
 Trejocode.com Official Website - Built in Next.js and statically served
 
-### 🎉 1.1.0 Dark Theme
+### 🎉 1.2.0 Lazy Loading for Images
+
+#### 1.1.0 Dark Theme
 <img width="860" src="https://res.cloudinary.com/trejocode/image/upload/v1596647419/Trejocode/trejocode-dark_l8b32y.gif" />
 
 
 ### 🏷️ Características / Features
-- Optimizado para SEO / SEO Ready.
+- Carga de imágenes difereidas / Lazy Load for Images
+- Optimizado para SEO / SEO Ready
 - Esenciales WCAG 2.1 para la accesibilidad Web / Essential WCAG 2.1 for Web accessibility
 - Dark Theme Inicial / Basic Dark Theme
 - Ruteador / Router
-- Cliente HTTP / HTTP Client.
-- PWA Listo / PWA Ready.
-- SASS precargado / SASS incorporated.
-- NProgress Loader.
-- Código documentado / Documented code.
-- Estructura de carpetas / Folder structure.
+- Cliente HTTP / HTTP Client
+- PWA Listo / PWA Ready
+- SASS precargado / SASS incorporated
+- NProgress Loader
+- Código documentado / Documented code
+- Estructura de carpetas / Folder structure
 - Última versión mayor de React y Next.js / React and Next.js latest version.
 
 
@@ -42,11 +45,12 @@ npm run dev
 ### 📐 Requisitos / Requirements
 - Node min: 12
 - Web Browser
-- VS Code or Atom, Sublime text
+- Text Editor
 
 
 ### 📦 Construido con / Build with
 * [Next.js](https://nextjs.org)
+* [React Cool Img](https://www.npmjs.com/package/react-cool-img)
 
 
 ### 🤝 Colaboradores / Collaborators

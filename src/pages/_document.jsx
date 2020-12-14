@@ -1,11 +1,11 @@
 /**
- * @version 1.0.1
+ * @version 1.2.0
  * @author Trejocode - Sergio
- * @description Plantilla HTML inicial
+ * @description Configuración adicional de la plantilla HTML
 */
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { GA_TRACKING_ID } from '../helpers/ga';
+import { GA_TRACKING_ID } from 'helpers/ga';
 
 class DocumentHTML extends Document {
 

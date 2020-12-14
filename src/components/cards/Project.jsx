@@ -4,7 +4,8 @@
  * @description Componente <CardProjects />
 */
 
-import React from 'react';
+import React    from 'react';
+import Img      from 'react-cool-img';
 
 const CardProjects = ({projects, index = null, limit}) => {
 
@@ -13,7 +14,7 @@ const CardProjects = ({projects, index = null, limit}) => {
             projects[index].projects.map((project, key) => key < limit &&
                 <div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { key }>
                     <div className="image responsive-img justify-center align-center">
-                        <img src = { project.img } alt = { project.name } title = { project.name } />
+                        <Img src = { project.img } alt = { project.name } title = { project.name } />
                     </div>
                     <div className="white-space-16"></div>
                     <div className="information column align-center">
@@ -49,7 +50,7 @@ const CardProjects = ({projects, index = null, limit}) => {
                         { collection.projects.map((project, index) => 
                             <div className="project project-aqua column wow fadeInLeft" data-wow-delay="100ms" key = { index }>
                                 <div className="image responsive-img justify-center align-center">
-                                    <img src = { project.img } alt = { project.title } title = { project.title } />
+                                    <Img src = { project.img } alt = { project.title } title = { project.title } />
                                 </div>
                                 <div className="white-space-16"></div>
                                 <div className="information column align-center">

@@ -8,7 +8,7 @@ import React, { memo }  from 'react';
 import Link             from 'next/link';
 import { TiArrowSortedUp } from 'react-icons/ti';
 
-const Footer = () => (
+const Footer = _ => (
     <footer className="column">
         <div className="footer-top justify-center">
             <div className="container">
@@ -22,7 +22,7 @@ const Footer = () => (
                         </div>
                         <div className="white-space-24"></div>
                         <div className="top-page full justify-center">
-                            <Link href = "#header">
+                            <Link href = "/#header">
                                 <a className="justify-center align-center">
                                     <TiArrowSortedUp size = { '1.2rem' } />
                                 </a>
