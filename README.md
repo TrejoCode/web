@@ -1,20 +1,23 @@
-
 ![Trejocode](https://res.cloudinary.com/trejocode/image/upload/v1586298449/Trejocode/logo_t0otlj.png)
 
 # 🌐 Trejocode.com - Sitio Web
+
 Sitio Web oficial de trejocode.com - Construido en Next.js y servido estáticamente 📄
 
 ---
 
 Trejocode.com Official Website - Built in Next.js and statically served
 
-### 🎉 1.2.0 Lazy Loading for Images
+### 🎉 1.3.0 hCaptcha
+
+### 1.2.0 Lazy Loading for Images
 
 #### 1.1.0 Dark Theme
+
 <img width="860" src="https://res.cloudinary.com/trejocode/image/upload/v1596647419/Trejocode/trejocode-dark_l8b32y.gif" />
 
-
 ### 🏷️ Características / Features
+
 - Carga de imágenes difereidas / Lazy Load for Images
 - Optimizado para SEO / SEO Ready
 - Esenciales WCAG 2.1 para la accesibilidad Web / Essential WCAG 2.1 for Web accessibility
@@ -28,11 +31,11 @@ Trejocode.com Official Website - Built in Next.js and statically served
 - Estructura de carpetas / Folder structure
 - Última versión mayor de React y Next.js / React and Next.js latest version.
 
-
 ### 🚀 Para empezar / Get started
+
 Estas instrucciones le proporcionarán una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo. Consulte la sección de implementación para obtener notas sobre cómo desplegar el proyecto en producción.
 
-------------
+---
 
 These instructions will provide you with a copy of the running project on your local machine for development purposes. See the implementation section for notes on how to deploy the project into production.
 
@@ -43,15 +46,15 @@ npm run dev
 ```
 
 ### 📐 Requisitos / Requirements
+
 - Node min: 12
 - Web Browser
 - Text Editor
 
-
 ### 📦 Construido con / Build with
-* [Next.js](https://nextjs.org)
-* [React Cool Img](https://www.npmjs.com/package/react-cool-img)
 
+- [Next.js](https://nextjs.org)
+- [React Cool Img](https://www.npmjs.com/package/react-cool-img)
 
 ### 🤝 Colaboradores / Collaborators
 
